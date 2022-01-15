@@ -6,10 +6,11 @@ import HeroImg from "../../assets/hero.jpg";
 const Header = () => {
   return (
     <header className="header">
-      <Image className="header-hero" src={HeroImg} alt="hero-image" />
       <Navbar />
-      <h1>LOREM IPSUM</h1>
-      <button>Browse catalog</button>
+      <div className="header__slogan">
+        <h1 className="header__slogan__text">LOREM IPSUM</h1>
+        <button className="header__slogan__button">browse catalog</button>
+      </div>
     </header>
   );
 };
