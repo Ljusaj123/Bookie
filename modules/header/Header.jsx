@@ -8,9 +8,11 @@ const Header = () => {
     <header className="header">
       <Navbar />
       <div className="header__slogan">
-        <h1 className="header__slogan__text">LOREM IPSUM</h1>
+        <h1 className="header__slogan__text">Read more, read often</h1>
         <button className="header__slogan__button">browse catalog</button>
       </div>
+
+      <div className="header__scroll-down"></div>
     </header>
   );
 };

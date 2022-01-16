@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,16 +6,63 @@
           box-sizing: border-box;
 }
 
+@-webkit-keyframes upndown {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
+@keyframes upndown {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
 .header {
   width: 100%;
-  min-height: 100vh;
-  background: url("../../public/hero.jpg") no-repeat center center/cover;
+  min-height: calc(100vh + 5em);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../../public/hero.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../../public/hero.jpg") no-repeat center center/cover;
   position: relative;
+}
+
+.header__scroll-down {
+  width: 2em;
+  height: 3em;
+  border: 0.15em solid rgba(225, 225, 225, 0.65);
+  position: relative;
+  border-radius: 0.5em;
+  top: 32em;
+  left: 50%;
+}
+
+.header__scroll-down::after {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  background: transparent;
+  border: 0.1em solid white;
+  width: 0.5em;
+  height: 0.5em;
+  content: "";
+  border-radius: 0.5em;
+  -webkit-animation: upndown 0.5s linear infinite alternate;
+          animation: upndown 0.5s linear infinite alternate;
 }
 
 .header__slogan {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -26,16 +74,31 @@
       -ms-flex-direction: column;
           flex-direction: column;
   place-items: center;
-  gap: 1em;
+  gap: 2em;
 }
 
 .header__slogan__text {
   color: white;
+  text-transform: uppercase;
+  font-size: clamp(2.5em, 8vw, 7.5em);
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-shadow: 0 0 0.1em black;
+}
+
+.header__slogan__button {
+  outline: none;
+  font-size: inherit;
+  padding: 0.3em 1.5em;
+  background: #eadedb;
+  border-radius: 0.5em;
+  border: none;
+  color: rgba(0, 0, 0, 0.794);
+  font-size: clamp(1em, 1.7vw, 3em);
 }
 
 .desktop-navigation {
   width: 100%;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,16 +106,48 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.25em 0.5em;
+  padding: 1.5em 0.5em;
   width: clamp(80vw, 40em, 95vw);
   margin: 0 auto;
   color: white;
+  font-size: clamp(0.85em, 1.5vw, 1.1em);
+  font-family: "Playfair Display", serif;
+}
+
+.desktop-navigation__banner {
+  font-size: clamp(1.25em, 2vw, 2.3em);
+  text-shadow: 0 0 0.1em black;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .desktop-navigation__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.75em;
+  gap: 1em;
+  text-shadow: 0 0 0.1em black;
+}
+
+.desktop-navigation__items a {
+  text-transform: lowercase;
+  position: relative;
+  cursor: pointer;
+}
+
+.desktop-navigation__items a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.15em;
+  bottom: -0.25em;
+  left: 0;
+  background: white;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+.desktop-navigation__items a:hover::after {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
