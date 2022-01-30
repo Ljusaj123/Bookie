@@ -1,0 +1,183 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #ffffffb8;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footer {
+  background-color: #55474e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 3rem;
+  height: 60vh;
+}
+
+.footer-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container .bookie-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0.5rem;
+}
+
+.footer-container .bookie-footer h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.footer-container .bookie-footer h2 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.footer-container .contact-footer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container .contact-footer h1 {
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  margin-bottom: 3rem;
+}
+
+.footer-container .contact-footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: clamp(170px, 20vw, 400px);
+}
+
+.footer-container .contact-footer form input,
+.footer-container .contact-footer form textarea {
+  margin-bottom: 2rem;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffffb8;
+  line-height: 30px;
+}
+
+.footer-container .contact-footer form textarea {
+  line-height: 15px;
+  height: 10rem;
+}
+
+.footer-container .contact-footer form button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: #968580;
+  margin: 0 auto;
+  color: #ffffffb8;
+  cursor: pointer;
+}
+
+.footer .made-by-footer {
+  width: 25%;
+  text-align: center;
+}
+
+.footer .made-by-footer h2 {
+  font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+.footer .made-by-footer .social-icons-footer {
+  margin-top: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .made-by-footer .social-icons-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container .bookie-footer {
+    margin-bottom: 3rem;
+    margin-right: 0;
+    text-align: center;
+  }
+  .footer-container .contact-footer h1 {
+    margin-bottom: 1.5rem;
+  }
+  .footer-container .contact-footer form textarea {
+    height: 5rem;
+  }
+  .footer-container .made-by-footer {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
