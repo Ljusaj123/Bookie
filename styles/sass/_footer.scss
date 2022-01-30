@@ -1,0 +1,87 @@
+.footer {
+	background-color: #55474e;
+	@include univerzalni-display(flex, center, center);
+	padding: 1rem 3rem;
+	height: 60vh;
+
+	&-container {
+		width: 100%;
+		@include univerzalni-display(flex, space-evenly, center);
+
+		& .bookie-footer {
+			display: flex;
+			flex-direction: column;
+			margin-right: 0.5rem;
+
+			& h1 {
+				margin-bottom: 1rem;
+				font-size: clamp(1.5rem, 4vw, 2.5rem);
+			}
+			& h2 {
+				font-size: clamp(1rem, 3vw, 1.5rem);
+			}
+		}
+
+		& .contact-footer {
+			height: 100%;
+			@include univerzalni-display(flex, center, center);
+			flex-direction: column;
+
+			& h1 {
+				font-size: clamp(1.2rem, 4vw, 2.5rem);
+				margin-bottom: 3rem;
+			}
+
+			& form {
+				@include univerzalni-display(flex, center, center);
+				flex-direction: column;
+				width: clamp(170px, 20vw, 400px);
+
+				& input,
+				& textarea {
+					margin-bottom: 2rem;
+					background: none;
+					outline: none;
+					border: none;
+					border-bottom: 1px solid #ffffffb8;
+					line-height: 30px;
+				}
+
+				& textarea {
+					line-height: 15px;
+					height: 10rem;
+				}
+
+				& button {
+					width: 70px;
+					height: 30px;
+					border-radius: 10px;
+					border: none;
+					background: #968580;
+					margin: 0 auto;
+					color: #ffffffb8;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	& .made-by-footer {
+		width: 25%;
+		text-align: center;
+
+		& h2 {
+			font-size: clamp(1.3rem, 2vw, 2rem);
+		}
+
+		& .social-icons-footer {
+			margin-top: 3rem;
+			width: 100%;
+			@include univerzalni-display(flex, space-evenly, center);
+
+			& a {
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}
