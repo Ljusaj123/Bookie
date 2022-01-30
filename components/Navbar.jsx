@@ -1,4 +1,5 @@
 import { navigationItems } from "../const/navbarList";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   return (
