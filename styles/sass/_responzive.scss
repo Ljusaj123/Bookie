@@ -4,9 +4,10 @@
 
 		&-container {
 			flex-direction: column;
+			@include univerzalni-display(flex, space-evenly, center);
 
 			& .bookie-footer {
-				margin-bottom: 3rem;
+				margin-bottom: 5rem;
 				margin-right: 0;
 				text-align: center;
 			}
@@ -17,14 +18,16 @@
 				}
 
 				& form {
+					width: clamp(170px, 60vw, 250px);
 					& textarea {
 						height: 5rem;
+						margin-bottom: 1rem;
 					}
 				}
 			}
 
 			& .made-by-footer {
-				margin-top: 2rem;
+				margin-top: 5rem;
 				width: 100%;
 			}
 		}
