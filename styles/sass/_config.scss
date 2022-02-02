@@ -7,10 +7,10 @@ $primary-text-color: #ffffffb8;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	color: $primary-text-color;
 }
 
 body {
-	color: $primary-text-color;
 	font-family: "Times New Roman", Times, serif;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 @mixin media-mobile {
-	@media screen and (max-width: 576px) {
+	@media screen and (max-width: 630px) {
 		@content;
 	}
 }
