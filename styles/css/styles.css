@@ -5,10 +5,10 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #ffffffb8;
 }
 
 body {
-  color: #ffffffb8;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -23,7 +23,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   height: 60vh;
 }
 
@@ -96,11 +96,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: clamp(170px, 20vw, 400px);
+  width: clamp(200px, 20vw, 400px);
 }
 
 .footer-container .contact-footer form input,
 .footer-container .contact-footer form textarea {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 2rem;
   background: none;
   outline: none;
@@ -126,16 +128,29 @@ body {
 }
 
 .footer .made-by-footer {
-  width: 25%;
+  width: 30%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer .made-by-footer h2 {
-  font-size: clamp(1.3rem, 2vw, 2rem);
+.footer .made-by-footer h1 {
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  margin-bottom: 1rem;
 }
 
 .footer .made-by-footer .social-icons-footer {
-  margin-top: 3rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,7 +168,7 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 630px) {
   .footer {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -164,20 +179,33 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer-container .bookie-footer {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     margin-right: 0;
     text-align: center;
   }
   .footer-container .contact-footer h1 {
     margin-bottom: 1.5rem;
   }
+  .footer-container .contact-footer form {
+    width: clamp(170px, 60vw, 250px);
+  }
   .footer-container .contact-footer form textarea {
     height: 5rem;
+    margin-bottom: 1rem;
   }
   .footer-container .made-by-footer {
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: 100%;
   }
 }
