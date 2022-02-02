@@ -20,7 +20,7 @@ const Footer = () => {
 
                 </div>
                 <div className="made-by-footer">
-                    <h2>Made with love by Rosmarina</h2>
+                    <h1>Made with love by Rosmarina</h1>
                     <div className="social-icons-footer">
                         <a href="">f</a>
                         <a href="">i</a>
