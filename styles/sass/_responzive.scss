@@ -19,6 +19,11 @@
 
 				& form {
 					width: clamp(170px, 60vw, 250px);
+
+					& input,
+					& textarea {
+						width: 100%;
+					}
 					& textarea {
 						height: 5rem;
 						margin-bottom: 1rem;
