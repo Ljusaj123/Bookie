@@ -53,11 +53,11 @@ body {
 
 .footer-container .bookie-footer h1 {
   margin-bottom: 1rem;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
 }
 
 .footer-container .bookie-footer h2 {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
 .footer-container .contact-footer {
@@ -78,7 +78,7 @@ body {
 }
 
 .footer-container .contact-footer h1 {
-  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin-bottom: 3rem;
 }
 
@@ -133,21 +133,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .made-by-footer h1 {
-  font-size: clamp(1.2rem, 3vw, 2.2rem);
-  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  margin-bottom: 2rem;
 }
 
 .footer .made-by-footer .social-icons-footer {
@@ -166,6 +166,7 @@ body {
 .footer .made-by-footer .social-icons-footer a {
   text-decoration: none;
   color: black;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 
 @media screen and (max-width: 630px) {
@@ -199,6 +200,10 @@ body {
   }
   .footer-container .contact-footer form {
     width: clamp(170px, 60vw, 250px);
+  }
+  .footer-container .contact-footer form input,
+  .footer-container .contact-footer form textarea {
+    width: 100%;
   }
   .footer-container .contact-footer form textarea {
     height: 5rem;
