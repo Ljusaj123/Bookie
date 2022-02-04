@@ -1,3 +1,6 @@
+import React from "react";
+import { FaFacebook, FaWhatsapp, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
 const Footer = () => {
     return (
         <footer className="footer">
@@ -22,10 +25,10 @@ const Footer = () => {
                 <div className="made-by-footer">
                     <h1>Made with love by Rosmarina</h1>
                     <div className="social-icons-footer">
-                        <a href="">f</a>
-                        <a href="">i</a>
-                        <a href="">w</a>
-                        <a href="">s</a>
+                        <a href=""><FaFacebook /></a>
+                        <a href=""><FaInstagram /></a>
+                        <a href=""><FaWhatsapp /></a>
+                        <a href=""><FaLinkedinIn /></a>
                     </div>
                 </div>
 
