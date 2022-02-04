@@ -17,6 +17,13 @@
 			& h1 {
 				margin-bottom: 1rem;
 				font-size: clamp(1.7rem, 3vw, 2.5rem);
+				cursor: pointer;
+				transition: all 0.2s ease;
+			}
+
+			& h1:active {
+				transform: scale(0.925);
+				transition: transform 0.2s ease;
 			}
 			& h2 {
 				font-size: clamp(1.2rem, 3vw, 1.5rem);
@@ -69,6 +76,19 @@
 					@include button($button-color-1, 35%, 2.2rem);
 					margin: 0 auto;
 					font-size: clamp(0.8rem, 1vw, 1rem);
+					transition: all 0.3s ease;
+				}
+
+				& button:focus {
+					box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+				}
+				& button:hover {
+					box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+					transform: translate3d(0, 1px, 0);
+					transition: all 0.3s ease;
+				}
+				& button:active {
+					transform: scale(0.9);
 				}
 			}
 		}
@@ -91,6 +111,12 @@
 			& a {
 				text-decoration: none;
 				font-size: clamp(1.2rem, 2vw, 1.5rem);
+				transition: all 0.3s ease;
+			}
+
+			& a:active {
+				transform: scale(0.875);
+				transition: all 0.2s ease;
 			}
 		}
 	}
