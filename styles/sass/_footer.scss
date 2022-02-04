@@ -15,10 +15,10 @@
 
 			& h1 {
 				margin-bottom: 1rem;
-				font-size: clamp(1.5rem, 4vw, 2.5rem);
+				font-size: clamp(1.7rem, 3vw, 2.5rem);
 			}
 			& h2 {
-				font-size: clamp(1rem, 3vw, 1.5rem);
+				font-size: clamp(1.2rem, 3vw, 1.5rem);
 			}
 		}
 
@@ -28,7 +28,7 @@
 			flex-direction: column;
 
 			& h1 {
-				font-size: clamp(1.2rem, 4vw, 2.5rem);
+				font-size: clamp(1.5rem, 4vw, 2.5rem);
 				margin-bottom: 3rem;
 			}
 
@@ -74,8 +74,8 @@
 		flex-direction: column;
 
 		& h1 {
-			font-size: clamp(1.2rem, 3vw, 2.2rem);
-			margin-bottom: 1rem;
+			font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+			margin-bottom: 2rem;
 		}
 
 		& .social-icons-footer {
@@ -85,6 +85,7 @@
 			& a {
 				text-decoration: none;
 				color: black;
+				font-size: clamp(1.2rem, 2vw, 1.5rem);
 			}
 		}
 	}
