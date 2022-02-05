@@ -246,7 +246,7 @@ body {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
-.newsletter {
+.show-catalog {
   height: 50vh;
   padding: 2rem 0.5rem;
   display: -webkit-box;
@@ -263,7 +263,7 @@ body {
   background-size: cover;
 }
 
-.newsletter-container {
+.show-catalog-container {
   height: 80%;
   width: 100%;
   margin: auto 0;
@@ -282,12 +282,12 @@ body {
           flex-direction: column;
 }
 
-.newsletter-container h1 {
+.show-catalog-container h1 {
   font-size: clamp(1.5rem, 5vw, 3.5rem);
   text-align: center;
 }
 
-.newsletter-container button {
+.show-catalog-container button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -303,12 +303,12 @@ body {
   font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
-.newsletter-container button:focus {
+.show-catalog-container button:focus {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
           box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
-.newsletter-container button:hover {
+.show-catalog-container button:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
           box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
   -webkit-transform: translate3d(0, 1px, 0);
@@ -319,7 +319,7 @@ body {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.newsletter-container button:active {
+.show-catalog-container button:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
