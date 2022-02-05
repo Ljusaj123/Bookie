@@ -5,6 +5,7 @@ import Image from "next/image";
 import Home from "./home";
 
 import React from "react";
+import Booklist from "../components/Booklist";
 
 const App = () => {
   return <Home />;

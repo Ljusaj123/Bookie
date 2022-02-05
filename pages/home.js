@@ -4,7 +4,12 @@ import NavBar from "../components/Navbar";
 import Booklist from "../components/Booklist";
 
 const Home = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Booklist />
+    </>
+  );
 };
 
 export default Home;

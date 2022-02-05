@@ -1,24 +1,39 @@
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
+import BookCard from "./BookCard";
 
 const Booklist = () => {
   const [bookList, setBookList] = useState([]);
 
-  const getUsers = async () => {
-    const mojApiPoziv = await fetch(
-      "https://jsonplaceholder.typicode.com/users"
-    );
+  const getBooks = async () => {
+    const mojApiPoziv = await fetch("https://gutendex.com/books/");
+    if (!mojApiPoziv.ok) {
+      console.warn("bad req");
+    }
     const mojRezultat = await mojApiPoziv.json();
-    setBookList(mojRezultat);
-    console.log(mojRezultat);
+    setBookList(mojRezultat.results);
+    console.log(mojRezultat.results);
     return mojRezultat;
   };
 
   useEffect(() => {
-    getUsers();
+    getBooks();
   }, []);
 
-  return <div></div>;
+  return (
+    <div className="booklist-wrapper">
+      <h2 className="booklist-heading">Fan favorites</h2>
+      <div className="booklist">
+        {bookList ? (
+          bookList.slice(0, 6).map((item, key) => {
+            return <BookCard item={item} key={key} />;
+          })
+        ) : (
+          <p>No books to render</p>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Booklist;

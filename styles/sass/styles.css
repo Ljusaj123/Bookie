@@ -150,4 +150,78 @@
 .desktop-navigation__items a:hover::after {
   width: 100%;
 }
+
+.booklist-wrapper {
+  background: #968580;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 5em;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  color: white;
+  padding: 5em 0;
+}
+
+.booklist-wrapper .booklist-heading {
+  font-size: clamp(2.5em, 4vw, 5.5em);
+  text-align: center;
+  color: white;
+}
+
+.booklist {
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  place-items: start center;
+  -ms-grid-columns: (minmax(20em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+}
+
+.booklist__card {
+  -webkit-box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
+          box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
+  border-radius: 0.3em;
+  width: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  gap: 1em;
+  text-align: center;
+}
+
+.booklist__card img {
+  height: 15em;
+  max-width: 100%;
+  -webkit-filter: drop-shadow(0.1em 0.1em 0.2em #000);
+          filter: drop-shadow(0.1em 0.1em 0.2em #000);
+}
+
+.booklist__card a {
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: clamp(1em, 1.5vw, 2em);
+  cursor: pointer;
+  padding: 0.5em 0.75em;
+  background: #3a2e39;
+  color: white;
+  border-radius: 0.25em;
+  -webkit-box-shadow: 0.1em 0.1em 0.1em #3a2e39;
+          box-shadow: 0.1em 0.1em 0.1em #3a2e39;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.booklist__card a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=styles.css.map */
