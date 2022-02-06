@@ -288,20 +288,34 @@
 }
 
 .search-controls {
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
   place-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
 }
 
-.search-controls button {
+.search-controls__left, .search-controls__right {
   outline: none;
   font-size: clamp(0.75em, 1.25vw, 2em);
   padding: 0.5em 0.75em;
   cursor: pointer;
+  border: none;
+  width: 3em;
+  height: 3em;
+}
+
+.search-controls__left {
+  background: url("../../assets/left-arrow.png") no-repeat center center/cover;
+}
+
+.search-controls__right {
+  background: url("../../assets/right-arrow.png") no-repeat center center/cover;
 }
 /*# sourceMappingURL=styles.css.map */

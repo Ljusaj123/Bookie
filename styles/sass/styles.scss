@@ -231,15 +231,29 @@
 
 .search-controls {
   // border: 1px solid blue;
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
   place-items: center;
-  justify-content: center;
-
-  button {
+  justify-content: flex-end;
+  padding: 1em;
+  &__left,
+  &__right {
     outline: none;
     font-size: clamp(0.75em, 1.25vw, 2em);
     padding: 0.5em 0.75em;
     cursor: pointer;
+    border: none;
+    width: 3em;
+    height: 3em;
+  }
+
+  &__left {
+    background: url("../../assets/left-arrow.png") no-repeat center center/cover;
+  }
+  &__right {
+    background: url("../../assets/right-arrow.png") no-repeat center
+      center/cover;
   }
 }

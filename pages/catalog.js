@@ -74,8 +74,14 @@ const Catalog = () => {
       </div>
 
       <div className="search-controls">
-        <button onClick={() => paginationToggle("PREV_PAGE")}>prev</button>
-        <button onClick={() => paginationToggle("NEXT_PAGE")}>next</button>
+        <button
+          className="search-controls__left"
+          onClick={() => paginationToggle("PREV_PAGE")}
+        ></button>
+        <button
+          className="search-controls__right"
+          onClick={() => paginationToggle("NEXT_PAGE")}
+        ></button>
       </div>
 
       <div className="booklist-wrapper">
@@ -91,8 +97,14 @@ const Catalog = () => {
       </div>
 
       <div className="search-controls">
-        <button onClick={() => paginationToggle("PREV_PAGE")}>prev</button>
-        <button onClick={() => paginationToggle("NEXT_PAGE")}>next</button>
+        <button
+          className="search-controls__left"
+          onClick={() => paginationToggle("PREV_PAGE")}
+        ></button>
+        <button
+          className="search-controls__right"
+          onClick={() => paginationToggle("NEXT_PAGE")}
+        ></button>
       </div>
     </main>
   );
