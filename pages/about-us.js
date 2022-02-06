@@ -25,7 +25,7 @@ const About = () => {
             </main>
             <section className="vision">
                 <div className="picture-container">
-                    <div></div>
+                    <div><p>slika se ne učitaje</p></div>
                 </div>
                 <div className="text-container">
                     <h1>Our Vision</h1>
