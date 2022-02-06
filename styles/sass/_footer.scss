@@ -83,6 +83,10 @@
 			font-size: clamp(1.5rem, 2.5vw, 2.1rem);
 			margin-bottom: 2rem;
 			text-align: center;
+
+			& span {
+				font-size: clamp(1rem, 1.5vw, 1.3rem);
+			}
 		}
 
 		& .social-icons-footer {
