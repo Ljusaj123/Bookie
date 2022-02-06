@@ -215,6 +215,10 @@ body {
   text-align: center;
 }
 
+.footer .made-by-footer h1 span {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
 .footer .made-by-footer .social-icons-footer {
   width: 100%;
   display: -webkit-box;
@@ -258,8 +262,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../../pictures/pexels-pixabay-261821.jpg) center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../../pictures/pexels-pixabay-261821.jpg) center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../../assets/show-catalog-image.jpg) center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../../assets/show-catalog-image.jpg) center;
   background-size: cover;
 }
 
