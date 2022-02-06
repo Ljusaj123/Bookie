@@ -4,7 +4,7 @@ const Newsletter = () => {
             <div className="newsletter-container">
                 <h1>Sign up to our newsletter</h1>
                 <div className="sign-in">
-                    <input type="email" />
+                    <input type="email" placeholder="Your email..." />
                     <button>
                         Sign Up
                     </button>
