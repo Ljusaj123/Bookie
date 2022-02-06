@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from '../modules/footer';
-import ShowCatalog from '../modules/showcatalog';
-import Newsletter from '../modules/newsletter';
+import Footer from '../modules/footer/footer';
+import ShowCatalog from '../modules/showcatalog/showcatalog';
+import Newsletter from '../modules/newsletter/newsletter';
 
 const Home = () => {
     return (
