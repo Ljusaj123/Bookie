@@ -32,3 +32,17 @@
 		}
 	}
 }
+@include media-mobile {
+	.newsletter-container {
+		& .sign-in {
+			flex-direction: column;
+			width: 75%;
+
+			& input {
+				width: 80%;
+				margin: 0 auto;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
