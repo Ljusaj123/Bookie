@@ -572,6 +572,168 @@ body {
   margin-bottom: 4rem;
 }
 
+.login {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.login header {
+  height: 50px;
+  width: 100%;
+  background-color: aqua;
+}
+
+.login-container {
+  background: #968580;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70vh;
+  width: 100vw;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.login-container h1 {
+  font-size: clamp(1.8rem, 8vw, 4.5rem);
+  margin-bottom: 2.5rem;
+}
+
+.login-container .login-form {
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-container .login-form .username-container,
+.login-container .login-form .password-container {
+  width: clamp(200px, 70%, 450px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+.login-container .login-form .username-container input,
+.login-container .login-form .password-container input {
+  width: 100%;
+  margin-left: 1rem;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #ffffffb8;
+  line-height: 30px;
+}
+
+.login-container .login-form .username-container input::-webkit-input-placeholder,
+.login-container .login-form .password-container input::-webkit-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.login-container .login-form .username-container input:-ms-input-placeholder,
+.login-container .login-form .password-container input:-ms-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.login-container .login-form .username-container input::-ms-input-placeholder,
+.login-container .login-form .password-container input::-ms-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.login-container .login-form .username-container input::placeholder,
+.login-container .login-form .password-container input::placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.login-container .login-form .username-container [placeholder]::-webkit-input-placeholder,
+.login-container .login-form .password-container [placeholder]::-webkit-input-placeholder {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.login-container .login-form .username-container [placeholder]:focus::-webkit-input-placeholder,
+.login-container .login-form .password-container [placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.login-container .login-form button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #3a2e39;
+  width: clamp(4rem, 40%, 7.5rem);
+  height: 2.4rem;
+  color: #ffffffb8;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+}
+
+.login-container .login-form button:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+          box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.login-container .login-form button:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+          box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+  -webkit-transform: translate3d(0, 1px, 0);
+          transform: translate3d(0, 1px, 0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.login-container .login-form button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.login-container .no-account {
+  padding: 0 1rem;
+}
+
+.login-container .no-account p {
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  text-align: center;
+}
+
 @media screen and (max-width: 630px) {
   .footer-container {
     -webkit-box-orient: vertical;
