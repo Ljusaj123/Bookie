@@ -248,100 +248,6 @@ body {
           box-shadow: none;
 }
 
-.catalog-main {
-  background: #968580;
-}
-
-.search-form {
-  width: clamp(80vw, 40em, 95vw);
-  margin: 0 auto;
-  padding: 2em 0;
-}
-
-.search-form form {
-  padding: 0.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-items: center;
-}
-
-.search-form input {
-  font-size: clamp(1em, 1.5vw, 2em);
-  outline: none;
-  background: none;
-  border: none;
-  -webkit-box-shadow: 0 0.25em 0.1em -0.1em white;
-          box-shadow: 0 0.25em 0.1em -0.1em white;
-  padding: 0.5em 0.75em;
-  color: white;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.search-form input::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.search-form input:-ms-input-placeholder {
-  opacity: 1;
-}
-
-.search-form input::-ms-input-placeholder {
-  opacity: 1;
-}
-
-.search-form input::placeholder {
-  opacity: 1;
-}
-
-.search-form input:focus {
-  -webkit-box-shadow: 0 0.25em 0.1em -0.1em orange;
-          box-shadow: 0 0.25em 0.1em -0.1em orange;
-}
-
-.search-form .search-icon {
-  outline: none;
-  border: none;
-  background: url("../../assets/search-icon.png") no-repeat center center/cover;
-  padding: 0.5em 0.75em;
-  cursor: pointer;
-  width: 3em;
-  height: 3em;
-}
-
-.search-controls {
-  width: clamp(80vw, 40em, 95vw);
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.5em;
-  place-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 1em;
-}
-
-.search-controls__left, .search-controls__right {
-  outline: none;
-  font-size: clamp(0.75em, 1.25vw, 2em);
-  padding: 0.5em 0.75em;
-  cursor: pointer;
-  border: none;
-  width: 3em;
-  height: 3em;
-}
-
-.search-controls__left {
-  background: url("../../assets/left-arrow.png") no-repeat center center/cover;
-}
-
-.search-controls__right {
-  background: url("../../assets/right-arrow.png") no-repeat center center/cover;
-}
-
 .show-catalog {
   height: 50vh;
   padding: 2rem 0.5rem;
@@ -795,6 +701,100 @@ body {
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.catalog-main {
+  background: #968580;
+}
+
+.search-form {
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.search-form form {
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+}
+
+.search-form input {
+  font-size: clamp(1em, 1.5vw, 2em);
+  outline: none;
+  background: none;
+  border: none;
+  -webkit-box-shadow: 0 0.25em 0.1em -0.1em white;
+          box-shadow: 0 0.25em 0.1em -0.1em white;
+  padding: 0.5em 0.75em;
+  color: white;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.search-form input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.search-form input:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.search-form input::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.search-form input::placeholder {
+  opacity: 1;
+}
+
+.search-form input:focus {
+  -webkit-box-shadow: 0 0.25em 0.1em -0.1em orange;
+          box-shadow: 0 0.25em 0.1em -0.1em orange;
+}
+
+.search-form .search-icon {
+  outline: none;
+  border: none;
+  background: url("../../assets/search-icon.png") no-repeat center center/cover;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+}
+
+.search-controls {
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+  place-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+}
+
+.search-controls__left, .search-controls__right {
+  outline: none;
+  font-size: clamp(0.75em, 1.25vw, 2em);
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  border: none;
+  width: 3em;
+  height: 3em;
+}
+
+.search-controls__left {
+  background: url("../../assets/left-arrow.png") no-repeat center center/cover;
+}
+
+.search-controls__right {
+  background: url("../../assets/right-arrow.png") no-repeat center center/cover;
 }
 
 .about {
