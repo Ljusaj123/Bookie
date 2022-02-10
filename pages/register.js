@@ -1,11 +1,14 @@
-import Footer from "../modules/footer/footer";
+import Footer from '../modules/footer/Footer'
+import Navbar from '../components/Navbar'
 import { MdEmail } from 'react-icons/md';
 import { FaUserAlt, FaLock } from 'react-icons/fa';
 
 const Register = () => {
     return (
         <section className="register">
-            <header></header>
+            <header>
+                <Navbar />
+            </header>
             <div className="register-container">
                 <h1>Register</h1>
                 <form className="register-form">

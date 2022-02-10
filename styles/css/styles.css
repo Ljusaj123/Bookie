@@ -1060,17 +1060,15 @@ body {
   text-align: center;
 }
 
-.register header {
-  height: 50px;
-  width: 100%;
-  background-color: aqua;
-}
-
-.register-container {
+.register {
   background-color: #968580;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+.register-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,12 +1,8 @@
 .register {
-	& header {
-		height: 50px;
-		width: 100%;
-		background-color: aqua;
-	}
+	background-color: $secondary-background-color;
+	height: max-content;
 	&-container {
-		background-color: $secondary-background-color;
-		height: max-content;
+		width: 100%;
 		@include univerzalni-display(flex, space-evenly, center);
 		flex-direction: column;
 
