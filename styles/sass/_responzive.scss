@@ -1,0 +1,34 @@
+@include media-mobile {
+	.footer-container {
+		flex-direction: column;
+
+		& .bookie-footer {
+			align-items: center;
+			margin-bottom: 5rem;
+		}
+
+		& .contact-footer {
+			& h1 {
+				margin-bottom: 1.5rem;
+			}
+
+			& form {
+				width: clamp(170px, 60vw, 250px);
+
+				& input,
+				& textarea {
+					width: 100%;
+				}
+				& textarea {
+					height: 5rem;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+
+		& .made-by-footer {
+			margin-top: 5rem;
+			width: 100%;
+		}
+	}
+}
