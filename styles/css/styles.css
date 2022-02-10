@@ -342,6 +342,84 @@ body {
   background: url("../../assets/right-arrow.png") no-repeat center center/cover;
 }
 
+.newsletter {
+  height: 50vh;
+  padding: 2rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../../pictures/pexels-pixabay-261821.jpg) center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../../pictures/pexels-pixabay-261821.jpg) center;
+  background-size: cover;
+}
+
+.newsletter-container {
+  height: 80%;
+  width: 100%;
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newsletter-container h1 {
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  text-align: center;
+}
+
+.newsletter-container button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f7ebebd7;
+  width: clamp(7rem, 30%, 12rem);
+  height: 3rem;
+  color: #ffffffb8;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  color: #070505;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+.newsletter-container button:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+          box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.newsletter-container button:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+          box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+  -webkit-transform: translate3d(0, 1px, 0);
+          transform: translate3d(0, 1px, 0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.newsletter-container button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 .footer {
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -483,12 +561,34 @@ body {
   width: 35%;
   height: 2.2rem;
   color: #ffffffb8;
-  margin: 0 auto;
-  font-size: clamp(0.8rem, 1vw, 1rem);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  margin: 0 auto;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  transition: transform 0.3s ease;
+}
+
+.footer-container .contact-footer form button:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+          box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.footer-container .contact-footer form button:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+          box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+  -webkit-transform: translate3d(0, 1px, 0);
+          transform: translate3d(0, 1px, 0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.footer-container .contact-footer form button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .footer-container .contact-footer form button:focus {

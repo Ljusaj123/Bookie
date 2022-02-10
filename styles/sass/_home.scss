@@ -262,6 +262,41 @@
 	}
 }
 
+//***SHOW CATALOG***//
+
+.newsletter {
+	height: 50vh;
+	padding: 2rem 0.5rem;
+	@include univerzalni-display(flex, center, center);
+	background: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.9),
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.9)
+		),
+		url(../../pictures/pexels-pixabay-261821.jpg) center;
+	background-size: cover;
+
+	&-container {
+		height: 80%;
+		width: 100%;
+		margin: auto 0;
+		@include univerzalni-display(flex, space-evenly, center);
+		flex-direction: column;
+
+		& h1 {
+			font-size: clamp(1.5rem, 5vw, 3.5rem);
+			text-align: center;
+		}
+
+		& button {
+			@include button($button-color-3, clamp(7rem, 30%, 12rem), 3rem);
+			color: $secondary-text-color;
+			font-size: clamp(0.8rem, 3vw, 1rem);
+		}
+	}
+}
+
 // ***FOOTER ***//
 
 .footer {

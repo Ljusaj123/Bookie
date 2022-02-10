@@ -8,6 +8,7 @@ const Home = () => {
     <>
       <Header />
       <Booklist />
+      <ShowCatalog />
       <Footer />
     </>
   );

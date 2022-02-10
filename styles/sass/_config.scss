@@ -7,11 +7,12 @@ $secondary-background-color: #dfdad9;
 
 //koliko znam, svugdje imamo jednu boju za text
 $primary-text-color: #ffffffb8;
+$secondary-text-color: #070505;
 
 //drugi tip puno češće se koristi nego drugi, a zadnji se samo jednom koristi
 $button-color-1: #968580;
 $button-color-2: #3a2e39;
-$button-color-3: #fef5f5;
+$button-color-3: #f7ebebd7;
 
 *,
 ::before,
@@ -79,4 +80,19 @@ body {
 	width: $width;
 	height: $height;
 	color: $primary-text-color;
+
+	transition: transform 0.3s ease;
+
+	&:focus {
+		box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+	}
+	&:hover {
+		box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+		transform: translate3d(0, 1px, 0);
+		transition: transform 0.3s ease;
+	}
+
+	&:active {
+		transform: scale(0.9);
+	}
 }
