@@ -1,4 +1,4 @@
-import Footer from "../modules/footer/Footer";
+
 import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import BookCard from "../components/BookCard";
