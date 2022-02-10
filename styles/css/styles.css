@@ -174,6 +174,174 @@ body {
   width: 100%;
 }
 
+.booklist-wrapper {
+  background: #968580;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 5em;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  color: white;
+  padding: 5em 0;
+}
+
+.booklist-wrapper .booklist-heading {
+  font-size: clamp(2.5em, 4vw, 5.5em);
+  text-align: center;
+  color: white;
+}
+
+.booklist {
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  place-items: start center;
+  -ms-grid-columns: (minmax(20em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+}
+
+.booklist__card {
+  -webkit-box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
+          box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
+  border-radius: 0.3em;
+  width: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  gap: 1em;
+  text-align: center;
+}
+
+.booklist__card img {
+  height: 15em;
+  max-width: 100%;
+  -webkit-filter: drop-shadow(0.1em 0.1em 0.2em #000);
+          filter: drop-shadow(0.1em 0.1em 0.2em #000);
+}
+
+.booklist__card a {
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: clamp(1em, 1.5vw, 2em);
+  cursor: pointer;
+  padding: 0.5em 0.75em;
+  background: #3a2e39;
+  color: white;
+  border-radius: 0.25em;
+  -webkit-box-shadow: 0.1em 0.1em 0.1em #3a2e39;
+          box-shadow: 0.1em 0.1em 0.1em #3a2e39;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.booklist__card a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.catalog-main {
+  background: #968580;
+}
+
+.search-form {
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.search-form form {
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+}
+
+.search-form input {
+  font-size: clamp(1em, 1.5vw, 2em);
+  outline: none;
+  background: none;
+  border: none;
+  -webkit-box-shadow: 0 0.25em 0.1em -0.1em white;
+          box-shadow: 0 0.25em 0.1em -0.1em white;
+  padding: 0.5em 0.75em;
+  color: white;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.search-form input::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.search-form input:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.search-form input::-ms-input-placeholder {
+  opacity: 1;
+}
+
+.search-form input::placeholder {
+  opacity: 1;
+}
+
+.search-form input:focus {
+  -webkit-box-shadow: 0 0.25em 0.1em -0.1em orange;
+          box-shadow: 0 0.25em 0.1em -0.1em orange;
+}
+
+.search-form .search-icon {
+  outline: none;
+  border: none;
+  background: url("../../assets/search-icon.png") no-repeat center center/cover;
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+}
+
+.search-controls {
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+  place-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+}
+
+.search-controls__left, .search-controls__right {
+  outline: none;
+  font-size: clamp(0.75em, 1.25vw, 2em);
+  padding: 0.5em 0.75em;
+  cursor: pointer;
+  border: none;
+  width: 3em;
+  height: 3em;
+}
+
+.search-controls__left {
+  background: url("../../assets/left-arrow.png") no-repeat center center/cover;
+}
+
+.search-controls__right {
+  background: url("../../assets/right-arrow.png") no-repeat center center/cover;
+}
+
 .footer {
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -429,172 +597,4 @@ body {
     margin-top: 5rem;
     width: 100%;
   }
-}
-
-.booklist-wrapper {
-  background: #968580;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  gap: 5em;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  color: white;
-  padding: 5em 0;
-}
-
-.booklist-wrapper .booklist-heading {
-  font-size: clamp(2.5em, 4vw, 5.5em);
-  text-align: center;
-  color: white;
-}
-
-.booklist {
-  width: clamp(80vw, 40em, 95vw);
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  gap: 2em;
-  place-items: start center;
-  -ms-grid-columns: (minmax(20em, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-}
-
-.booklist__card {
-  -webkit-box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
-          box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
-  border-radius: 0.3em;
-  width: 100%;
-  padding: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  place-items: center;
-  gap: 1em;
-  text-align: center;
-}
-
-.booklist__card img {
-  height: 15em;
-  max-width: 100%;
-  -webkit-filter: drop-shadow(0.1em 0.1em 0.2em #000);
-          filter: drop-shadow(0.1em 0.1em 0.2em #000);
-}
-
-.booklist__card a {
-  text-transform: lowercase;
-  text-decoration: none;
-  font-size: clamp(1em, 1.5vw, 2em);
-  cursor: pointer;
-  padding: 0.5em 0.75em;
-  background: #3a2e39;
-  color: white;
-  border-radius: 0.25em;
-  -webkit-box-shadow: 0.1em 0.1em 0.1em #3a2e39;
-          box-shadow: 0.1em 0.1em 0.1em #3a2e39;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.booklist__card a:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.catalog-main {
-  background: #968580;
-}
-
-.search-form {
-  width: clamp(80vw, 40em, 95vw);
-  margin: 0 auto;
-  padding: 2em 0;
-}
-
-.search-form form {
-  padding: 0.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-items: center;
-}
-
-.search-form input {
-  font-size: clamp(1em, 1.5vw, 2em);
-  outline: none;
-  background: none;
-  border: none;
-  -webkit-box-shadow: 0 0.25em 0.1em -0.1em white;
-          box-shadow: 0 0.25em 0.1em -0.1em white;
-  padding: 0.5em 0.75em;
-  color: white;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.search-form input::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.search-form input:-ms-input-placeholder {
-  opacity: 1;
-}
-
-.search-form input::-ms-input-placeholder {
-  opacity: 1;
-}
-
-.search-form input::placeholder {
-  opacity: 1;
-}
-
-.search-form input:focus {
-  -webkit-box-shadow: 0 0.25em 0.1em -0.1em orange;
-          box-shadow: 0 0.25em 0.1em -0.1em orange;
-}
-
-.search-form .search-icon {
-  outline: none;
-  border: none;
-  background: url("../../assets/search-icon.png") no-repeat center center/cover;
-  padding: 0.5em 0.75em;
-  cursor: pointer;
-  width: 3em;
-  height: 3em;
-}
-
-.search-controls {
-  width: clamp(80vw, 40em, 95vw);
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.5em;
-  place-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 1em;
-}
-
-.search-controls__left, .search-controls__right {
-  outline: none;
-  font-size: clamp(0.75em, 1.25vw, 2em);
-  padding: 0.5em 0.75em;
-  cursor: pointer;
-  border: none;
-  width: 3em;
-  height: 3em;
-}
-
-.search-controls__left {
-  background: url("../../assets/left-arrow.png") no-repeat center center/cover;
-}
-
-.search-controls__right {
-  background: url("../../assets/right-arrow.png") no-repeat center center/cover;
 }
