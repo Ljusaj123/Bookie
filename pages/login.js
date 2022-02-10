@@ -1,10 +1,13 @@
-import Footer from "../modules/footer/footer";
+import Footer from '../modules/footer/Footer';
 import { FaUserAlt, FaLock } from 'react-icons/fa';
+import Navbar from '../components/Navbar';
 
 const Login = () => {
     return (
         <section className="login">
-            <header></header>
+            <header>
+                <Navbar />
+            </header>
             <div className="login-container">
                 <h1>Login</h1>
                 <form className="login-form">

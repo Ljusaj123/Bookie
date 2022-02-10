@@ -1,10 +1,11 @@
-import Footer from "../modules/footer/footer";
+import Footer from "../modules/footer/Footer";
+import Navbar from "../components/Navbar";
 
 const About = () => {
     return (
         <section className="about">
             <header>
-                {/* ovdje ce biti header */}
+                <Navbar />
             </header>
             <main className="introduction">
                 <h1>About Us</h1>
