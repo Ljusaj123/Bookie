@@ -1,0 +1,68 @@
+.register {
+	& header {
+		height: 50px;
+		width: 100%;
+		background-color: aqua;
+	}
+	&-container {
+		background-color: $secondary-background-color;
+		height: max-content;
+		@include univerzalni-display(flex, space-evenly, center);
+		flex-direction: column;
+
+		& h1 {
+			font-size: clamp(1.8rem, 7vw, 4.5rem);
+			margin-top: 2rem;
+		}
+
+		& .register-form {
+			height: 80vh;
+			width: 70%;
+			@include univerzalni-display(flex, space-evenly, center);
+			flex-direction: column;
+
+			& div {
+				width: 100%;
+				@include univerzalni-display(flex, center, center);
+				margin-bottom: 1rem;
+
+				& input {
+					width: clamp(200px, 50%, 450px);
+					margin-left: 0.5rem;
+					outline: none;
+					background: none;
+					border: none;
+					border-bottom: 1px solid $primary-text-color;
+					line-height: 30px;
+
+					&::placeholder {
+						color: $primary-text-color;
+						font-size: clamp(0.7rem, 2vw, 0.9rem);
+					}
+				}
+				& [placeholder]::-webkit-input-placeholder {
+					transition: color 0.5s ease;
+				}
+				& [placeholder]:focus::-webkit-input-placeholder {
+					color: transparent;
+					transition: color 0.5s ease;
+				}
+			}
+			& .name-surname-container {
+				@include univerzalni-display(flex, center, center);
+
+				& input {
+					width: clamp(100px, 25%, 220px);
+				}
+				& .name {
+					margin-right: 1rem;
+				}
+			}
+		}
+
+		& button {
+			@include button($button-color-2, clamp(5.5rem, 30%, 9rem), 2.5rem);
+			font-size: clamp(0.6rem, 2vw, 0.8rem);
+		}
+	}
+}
