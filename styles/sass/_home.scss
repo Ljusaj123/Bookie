@@ -297,6 +297,60 @@
 	}
 }
 
+//*** NEWSLETTER ***//
+.newsletter {
+	height: 50vh;
+	padding: 2rem 0.5rem;
+	background-color: $secondary-background-color;
+	@include univerzalni-display(flex, start, start);
+
+	&-container {
+		height: 80%;
+		width: 100%;
+		margin: auto 0;
+		@include univerzalni-display(flex, space-between, center);
+		flex-direction: column;
+
+		& h1 {
+			font-size: clamp(1.5rem, 5vw, 3rem);
+			text-align: center;
+		}
+
+		& .sign-in {
+			width: 100%;
+			height: 60%;
+			@include univerzalni-display(flex, center, center);
+
+			& input {
+				width: clamp(100px, 30%, 350px);
+				outline: none;
+				background: none;
+				border: none;
+				border-bottom: 1px solid $primary-text-color;
+				color: $primary-text-color;
+				line-height: 30px;
+				margin-right: 2rem;
+
+				&::placeholder {
+					color: $primary-text-color;
+					font-size: clamp(0.7rem, 3vw, 0.9rem);
+				}
+			}
+			& [placeholder]::-webkit-input-placeholder {
+				transition: color 0.5s ease;
+			}
+			& [placeholder]:focus::-webkit-input-placeholder {
+				color: transparent;
+				transition: color 0.5s ease;
+			}
+			& button {
+				@include button($button-color-2, clamp(3.5rem, 30%, 7rem), 2.3rem);
+				font-size: clamp(0.6rem, 3vw, 0.9rem);
+			}
+		}
+	}
+}
+
 // ***FOOTER ***//
 
 .footer {
