@@ -354,8 +354,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../../pictures/pexels-pixabay-261821.jpg) center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../../pictures/pexels-pixabay-261821.jpg) center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../../assets/show-catalog-image.jpg) center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../../assets/show-catalog-image.jpg) center;
   background-size: cover;
 }
 
@@ -805,12 +805,6 @@ body {
   height: max-content;
 }
 
-.about header {
-  height: 50px;
-  width: 100%;
-  background-color: aqua;
-}
-
 .about .introduction {
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -914,16 +908,10 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-}
-
-.login header {
-  height: 50px;
-  width: 100%;
-  background-color: aqua;
+  background: #968580;
 }
 
 .login-container {
-  background: #968580;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
