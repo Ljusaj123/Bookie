@@ -797,6 +797,119 @@ body {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
+.about {
+  background: -webkit-gradient(linear, left top, left bottom, from(#968580), color-stop(#968580), to(#ffffffb8));
+  background: linear-gradient(to bottom, #968580, #968580, #ffffffb8);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.about header {
+  height: 50px;
+  width: 100%;
+  background-color: aqua;
+}
+
+.about .introduction {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 70%;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .introduction h1 {
+  font-size: clamp(1.8rem, 7vw, 5.5rem);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.about .introduction p {
+  font-size: clamp(0.9rem, 3vw, 1.5rem);
+  text-align: center;
+}
+
+.about .vision {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+  margin: 10rem 0;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .vision .picture-container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .vision .picture-container div {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+}
+
+.about .vision .text-container {
+  width: 40%;
+  padding: 1rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .vision .text-container h1 {
+  font-size: clamp(1.8rem, 6vw, 4.5rem);
+  margin-bottom: 3rem;
+}
+
+.about .vision .text-container p {
+  font-size: clamp(0.9rem, 3vw, 1.3rem);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
 @media screen and (max-width: 630px) {
   .footer-container {
     -webkit-box-orient: vertical;
@@ -842,5 +955,19 @@ body {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 2rem;
+  }
+  .about .introduction {
+    width: 90%;
+  }
+  .about .vision {
+    margin: 3rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .vision .text-container {
+    width: 90%;
+    padding: 0;
   }
 }

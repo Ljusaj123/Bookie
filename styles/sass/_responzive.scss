@@ -45,4 +45,20 @@
 			}
 		}
 	}
+
+	.about {
+		& .introduction {
+			width: 90%;
+		}
+
+		.vision {
+			margin: 3rem 0;
+			flex-direction: column;
+
+			& .text-container {
+				width: 90%;
+				padding: 0;
+			}
+		}
+	}
 }

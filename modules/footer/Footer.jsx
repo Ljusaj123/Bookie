@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaWhatsapp, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp, FaInstagram, FaLinkedinIn, FaHeart } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -23,7 +23,7 @@ const Footer = () => {
 
                 </div>
                 <div className="made-by-footer">
-                    <h1>Made with love by Rosmarina</h1>
+                    <h1>Made with <span><FaHeart /></span> by Rosmarina</h1>
                     <div className="social-icons-footer">
                         <a href=""><FaFacebook /></a>
                         <a href=""><FaInstagram /></a>
