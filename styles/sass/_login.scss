@@ -1,13 +1,8 @@
 .login {
 	height: max-content;
+	background: $secondary-background-color;
 
-	& header {
-		height: 50px;
-		width: 100%;
-		background-color: aqua;
-	}
 	&-container {
-		background: $secondary-background-color;
 		@include univerzalni-display(flex, space-around, center);
 		flex-direction: column;
 		height: 70vh;
