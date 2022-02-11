@@ -489,7 +489,7 @@ nav {
 }
 
 .newsletter-container .sign-in-form .form-container {
-  width: 70%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -502,7 +502,7 @@ nav {
 }
 
 .newsletter-container .sign-in-form .form-container input {
-  width: clamp(100px, 30%, 350px);
+  width: clamp(250px, 30%, 350px);
   outline: none;
   background: none;
   border: none;
@@ -1704,16 +1704,14 @@ nav {
 }
 
 @media screen and (max-width: 630px) {
-  .newsletter-container .sign-in {
+  .newsletter-container .sign-in-form .form-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 75%;
   }
-  .newsletter-container .sign-in input {
-    width: 80%;
-    margin: 0 auto;
+  .newsletter-container .sign-in-form .form-container input {
+    margin-right: 0;
     margin-bottom: 2rem;
   }
   .about .introduction {

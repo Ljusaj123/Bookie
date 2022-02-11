@@ -336,10 +336,10 @@ nav {
 			flex-direction: column;
 
 			& .form-container {
-				width: 70%;
+				width: 100%;
 				@include univerzalni-display(flex, center, center);
 				& input {
-					width: clamp(100px, 30%, 350px);
+					width: clamp(250px, 30%, 350px);
 					outline: none;
 					background: none;
 					border: none;
