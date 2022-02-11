@@ -1,75 +1,75 @@
 .catalog-main {
-	background: #968580;
+  background: #968580;
 }
 
 .search-form {
-	// border: 1px solid red;
-	width: clamp(80vw, 40em, 95vw);
-	margin: 0 auto;
-	padding: 2em 0;
+  // border: 1px solid red;
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
+  padding: 2em 0;
 
-	form {
-		padding: 0.5em;
-		display: flex;
-		place-items: center;
-	}
+  form {
+    padding: 0.5em;
+    display: flex;
+    place-items: center;
+  }
 
-	input {
-		font-size: clamp(1em, 1.5vw, 2em);
-		outline: none;
-		background: none;
-		border: none;
-		box-shadow: 0 0.25em 0.1em -0.1em white;
-		padding: 0.5em 0.75em;
-		color: white;
-		transition: all 0.25s ease-in-out;
+  input {
+    font-size: clamp(1em, 1.5vw, 2em);
+    outline: none;
+    background: none;
+    border: none;
+    box-shadow: 0 0.25em 0.1em -0.1em white;
+    padding: 0.5em 0.75em;
+    color: white;
+    transition: all 0.25s ease-in-out;
 
-		&::placeholder {
-			opacity: 1;
-		}
+    &::placeholder {
+      opacity: 1;
+    }
 
-		&:focus {
-			box-shadow: 0 0.25em 0.1em -0.1em orange;
-		}
-	}
+    &:focus {
+      box-shadow: 0 0.25em 0.1em -0.1em orange;
+    }
+  }
 
-	.search-icon {
-		outline: none;
-		border: none;
-		background: url("../../assets/search-icon.png") no-repeat center
-			center/cover;
-		padding: 0.5em 0.75em;
-		cursor: pointer;
-		width: 3em;
-		height: 3em;
-	}
+  .search-icon {
+    outline: none;
+    border: none;
+    background: url("../../assets/search-icon.png") no-repeat center
+      center/cover;
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+  }
 }
 
 .search-controls {
-	// border: 1px solid blue;
-	width: clamp(80vw, 40em, 95vw);
-	margin: 0 auto;
-	display: flex;
-	gap: 1.5em;
-	place-items: center;
-	justify-content: flex-end;
-	padding: 1em;
-	&__left,
-	&__right {
-		outline: none;
-		font-size: clamp(0.75em, 1.25vw, 2em);
-		padding: 0.5em 0.75em;
-		cursor: pointer;
-		border: none;
-		width: 3em;
-		height: 3em;
-	}
+  // border: 1px solid blue;
+  width: clamp(80vw, 40em, 95vw);
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5em;
+  place-items: center;
+  justify-content: flex-end;
+  padding: 1em;
+  &__left,
+  &__right {
+    outline: none;
+    font-size: clamp(0.75em, 1.25vw, 2em);
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+    border: none;
+    width: 3em;
+    height: 3em;
+  }
 
-	&__left {
-		background: url("../../assets/left-arrow.png") no-repeat center center/cover;
-	}
-	&__right {
-		background: url("../../assets/right-arrow.png") no-repeat center
-			center/cover;
-	}
+  &__left {
+    background: url("../../assets/left-arrow.png") no-repeat center center/cover;
+  }
+  &__right {
+    background: url("../../assets/right-arrow.png") no-repeat center
+      center/cover;
+  }
 }

@@ -1,4 +1,3 @@
-
 import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import BookCard from "../components/BookCard";
@@ -86,12 +85,12 @@ const Catalog = () => {
 
       <div className="booklist-wrapper">
         <div className="booklist">
-          {searchResults ? (
+          {searchResults.length > 0 ? (
             searchResults.map((item, key) => {
               return <BookCard item={item} key={key} />;
             })
           ) : (
-            <h2>No results to show</h2>
+            <h2>loading...</h2>
           )}
         </div>
       </div>

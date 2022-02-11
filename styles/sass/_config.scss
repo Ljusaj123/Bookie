@@ -1,6 +1,6 @@
 //google fonts
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 //dvije pozadine
 $primary-background-color: #55474e;
 $secondary-background-color: #968580;
@@ -8,6 +8,7 @@ $secondary-background-color: #968580;
 //koliko znam, svugdje imamo jednu boju za text
 $primary-text-color: #ffffffb8;
 $secondary-text-color: #070505;
+$navigation-text-color: #ffffffd3;
 
 //drugi tip puno češće se koristi nego drugi, a zadnji se samo jednom koristi
 $button-color-1: #968580;
@@ -17,82 +18,79 @@ $button-color-3: #f7ebebd7;
 *,
 ::before,
 ::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
-	//ovdje je color da se primjeni i na placeholdere
-	color: $primary-text-color;
+  //ovdje je color da se primjeni i na placeholdere
+  color: $primary-text-color;
 
-	//ovdje sam stavila jer dok se nalazi u bodyju
-	//se ne primjenjuje iz nekog razloga na h1 i h2
-	font-weight: 500;
+  //ovdje sam stavila jer dok se nalazi u bodyju
+  //se ne primjenjuje iz nekog razloga na h1 i h2
+  font-weight: 500;
 }
 
 body {
-	//iako sam vidila kako je u figmi stavljeno, opet drukčije izgleda font
-	//ne znam zašto, ali mi se i ovako sviđa
-	font-family: "Playfair Display SC", serif;
-	text-transform: lowercase;
-	font-variant: small-caps;
-	letter-spacing: 1px;
+  //iako sam vidila kako je u figmi stavljeno, opet drukčije izgleda font
+  //ne znam zašto, ali mi se i ovako sviđa
+  font-family: "Playfair Display", serif;
 }
 
 [placeholder] {
-	//font koji smo definirali za body, u placeholderima
-	//mi je ružan, pa sam stavila ovaj
-	font-family: monospace;
+  //font koji smo definirali za body, u placeholderima
+  //mi je ružan, pa sam stavila ovaj
+  font-family: monospace;
 }
 
 // mixin za display
 @mixin univerzalni-display($display, $justify-content, $align-items) {
-	display: $display;
-	justify-content: $justify-content;
-	align-items: $align-items;
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
 //mixin za responzivnost
 @mixin media-mobile {
-	@media screen and (max-width: 630px) {
-		@content;
-	}
+  @media screen and (max-width: 630px) {
+    @content;
+  }
 }
 
 @mixin media-tablet {
-	@media screen and (max-width: 768px) {
-		@content;
-	}
+  @media screen and (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin media-laptop {
-	@media screen and (max-width: 1280px) {
-		@content;
-	}
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
 }
 
 //mixin za botune
 @mixin button($background, $width, $height) {
-	border: none;
-	border-radius: 10px;
-	cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 
-	background: $background;
-	width: $width;
-	height: $height;
-	color: $primary-text-color;
+  background: $background;
+  width: $width;
+  height: $height;
+  color: $primary-text-color;
 
-	transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 
-	&:focus {
-		box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
-	}
-	&:hover {
-		box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
-		transform: translate3d(0, 1px, 0);
-		transition: transform 0.3s ease;
-	}
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+  }
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
+    transform: translate3d(0, 1px, 0);
+    transition: transform 0.3s ease;
+  }
 
-	&:active {
-		transform: scale(0.9);
-	}
+  &:active {
+    transform: scale(0.9);
+  }
 }
