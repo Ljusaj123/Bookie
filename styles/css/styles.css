@@ -705,7 +705,7 @@ nav {
 .footer-container .contact-footer form textarea {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   background: none;
   outline: none;
   border: none;
@@ -742,7 +742,6 @@ nav {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   margin: 0 auto;
   font-size: clamp(0.8rem, 1vw, 1rem);
-  transition: transform 0.3s ease;
 }
 
 .footer-container .contact-footer form button:focus {
@@ -766,25 +765,18 @@ nav {
           transform: scale(0.9);
 }
 
-.footer-container .contact-footer form button:focus {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
-          box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+.footer-container .contact-footer form p {
+  color: rgba(37, 3, 3, 0.815);
+  font-weight: 900;
+  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  margin-bottom: 2rem;
 }
 
-.footer-container .contact-footer form button:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
-          box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
-  -webkit-transform: translate3d(0, 1px, 0);
-          transform: translate3d(0, 1px, 0);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.footer-container .contact-footer form button:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+.footer-container .contact-footer form h4 {
+  color: rgba(5, 116, 23, 0.801);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  margin-top: 2rem;
 }
 
 .footer .made-by-footer {
@@ -808,6 +800,10 @@ nav {
   font-size: clamp(1.5rem, 2.5vw, 2.1rem);
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.footer .made-by-footer h1 span {
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
 
 .footer .made-by-footer .social-icons-footer {
