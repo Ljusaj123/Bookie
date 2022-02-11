@@ -92,12 +92,12 @@
 		}
 
 		& p {
-			@include error-message(clamp(0.7rem, 1.5vw, 0.9rem));
+			@include error-message();
 			margin: 1rem 0 1.5rem 0;
 		}
 
 		& h4 {
-			@include succes-message(clamp(0.7rem, 1.5vw, 1rem));
+			@include succes-message();
 			margin: 0 1rem 1.5rem 0;
 		}
 	}

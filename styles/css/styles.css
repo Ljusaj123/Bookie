@@ -586,13 +586,13 @@ nav {
 .newsletter-container .sign-in-form .error-messages p {
   color: rgba(37, 3, 3, 0.815);
   font-weight: 900;
-  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
 }
 
 .newsletter-container .sign-in-form .error-messages h4 {
   color: rgba(5, 116, 23, 0.801);
   font-weight: 800;
-  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 
 .footer {
@@ -768,14 +768,14 @@ nav {
 .footer-container .contact-footer form p {
   color: rgba(37, 3, 3, 0.815);
   font-weight: 900;
-  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
   margin-bottom: 2rem;
 }
 
 .footer-container .contact-footer form h4 {
   color: rgba(5, 116, 23, 0.801);
   font-weight: 800;
-  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
   margin-top: 2rem;
 }
 
@@ -1451,14 +1451,14 @@ nav {
 .login-container .login-form p {
   color: rgba(37, 3, 3, 0.815);
   font-weight: 900;
-  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
   margin-bottom: 3rem;
 }
 
 .login-container .login-form h4 {
   color: rgba(5, 116, 23, 0.801);
   font-weight: 800;
-  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
   margin: 1.5rem 0;
 }
 

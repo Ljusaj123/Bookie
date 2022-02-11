@@ -95,13 +95,13 @@ body {
 	}
 }
 
-@mixin error-message($size) {
+@mixin error-message() {
 	color: rgba(37, 3, 3, 0.815);
 	font-weight: 900;
-	font-size: $size;
+	font-size: clamp(0.7rem, 1.5vw, 0.9rem);
 }
-@mixin succes-message($size) {
+@mixin succes-message() {
 	color: rgba(5, 116, 23, 0.801);
 	font-weight: 800;
-	font-size: $size;
+	font-size: clamp(0.7rem, 1.5vw, 1rem);
 }

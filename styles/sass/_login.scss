@@ -50,12 +50,12 @@
 			}
 
 			& p {
-				@include error-message(clamp(0.7rem, 1.5vw, 1.1rem));
+				@include error-message();
 				margin-bottom: 3rem;
 			}
 
 			& h4 {
-				@include succes-message(clamp(0.7rem, 1.5vw, 1.1rem));
+				@include succes-message();
 				margin: 1.5rem 0;
 			}
 			& button {
