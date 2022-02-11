@@ -1340,7 +1340,7 @@ nav {
 }
 
 .login-container h1 {
-  font-size: clamp(1.8rem, 8vw, 4.5rem);
+  font-size: clamp(0.8rem, 8vw, 4.5rem);
   margin-bottom: 2.5rem;
 }
 
@@ -1373,7 +1373,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .login-container .login-form .username-container input,
@@ -1422,6 +1422,20 @@ nav {
   color: transparent;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
+}
+
+.login-container .login-form p {
+  color: rgba(37, 3, 3, 0.815);
+  font-weight: 900;
+  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  margin-bottom: 3rem;
+}
+
+.login-container .login-form h4 {
+  color: rgba(5, 116, 23, 0.801);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  margin: 1.5rem 0;
 }
 
 .login-container .login-form button {
@@ -1688,4 +1702,3 @@ nav {
     padding: 0;
   }
 }
-/*# sourceMappingURL=styles.css.map */
