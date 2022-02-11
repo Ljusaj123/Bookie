@@ -49,9 +49,13 @@
 			width: 90%;
 		}
 
-		.vision {
+		& .vision {
 			margin: 3rem 0;
 			flex-direction: column;
+
+			& h1 {
+				margin-top: 2rem;
+			}
 
 			& .text-container {
 				width: 90%;
