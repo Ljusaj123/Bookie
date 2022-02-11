@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import BookCard from "../components/BookCard";
+import Footer from "../modules/footer/Footer";
 
 const Catalog = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -71,7 +72,6 @@ const Catalog = () => {
           <button className="search-icon"></button>
         </form>
       </div>
-
       <div className="search-controls">
         <button
           className="search-controls__left"
@@ -82,7 +82,6 @@ const Catalog = () => {
           onClick={() => paginationToggle("NEXT_PAGE")}
         ></button>
       </div>
-
       <div className="booklist-wrapper">
         <div className="booklist">
           {searchResults.length > 0 ? (
@@ -94,7 +93,6 @@ const Catalog = () => {
           )}
         </div>
       </div>
-
       <div className="search-controls">
         <button
           className="search-controls__left"
@@ -105,6 +103,7 @@ const Catalog = () => {
           onClick={() => paginationToggle("NEXT_PAGE")}
         ></button>
       </div>
+      <Footer />;
     </main>
   );
 };
