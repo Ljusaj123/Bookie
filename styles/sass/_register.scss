@@ -3,55 +3,85 @@
 	height: max-content;
 	&-container {
 		width: 100%;
-		@include univerzalni-display(flex, space-evenly, center);
+		padding: 1rem;
+		@include univerzalni-display(flex, center, center);
 		flex-direction: column;
 
 		& h1 {
 			font-size: clamp(1.8rem, 7vw, 4.5rem);
-			margin-top: 2rem;
+			margin: 2rem 0;
 		}
 
 		& .register-form {
-			height: 80vh;
-			width: 70%;
+			height: 100vh;
+			width: clamp(25vh, 50%, 50vh);
 			@include univerzalni-display(flex, space-evenly, center);
 			flex-direction: column;
 
-			& div {
+			& .container {
 				width: 100%;
-				@include univerzalni-display(flex, center, center);
-				margin-bottom: 1rem;
+				@include univerzalni-display(flex, space-evenly, center);
+				flex-direction: column;
 
-				& input {
-					width: clamp(200px, 50%, 450px);
-					margin-left: 0.5rem;
-					outline: none;
-					background: none;
-					border: none;
-					border-bottom: 1px solid $primary-text-color;
-					line-height: 30px;
+				& .input-container {
+					width: 100%;
+					@include univerzalni-display(flex, center, center);
 
-					&::placeholder {
-						color: $primary-text-color;
-						font-size: clamp(0.7rem, 2vw, 0.9rem);
+					& input {
+						width: 100%;
+						margin-left: 0.5rem;
+						outline: none;
+						background: none;
+						border: none;
+						border-bottom: 1px solid $primary-text-color;
+						line-height: 30px;
+
+						&::placeholder {
+							color: $primary-text-color;
+							font-size: clamp(0.7rem, 2vw, 0.9rem);
+						}
+					}
+					& [placeholder]::-webkit-input-placeholder {
+						transition: color 0.5s ease;
+					}
+					& [placeholder]:focus::-webkit-input-placeholder {
+						color: transparent;
+						transition: color 0.5s ease;
 					}
 				}
-				& [placeholder]::-webkit-input-placeholder {
-					transition: color 0.5s ease;
-				}
-				& [placeholder]:focus::-webkit-input-placeholder {
-					color: transparent;
-					transition: color 0.5s ease;
-				}
 			}
-			& .name-surname-container {
-				@include univerzalni-display(flex, center, center);
 
-				& input {
-					width: clamp(100px, 25%, 220px);
-				}
-				& .name {
-					margin-right: 1rem;
+			& .name-surname-container {
+				width: 100%;
+				@include univerzalni-display(flex, center, center);
+				flex-direction: row;
+
+				& .name-container,
+				& .surname-container {
+					width: 50%;
+					@include univerzalni-display(flex, space-evenly, center);
+					flex-direction: column;
+
+					& input {
+						width: clamp(110px, 90%, 200px);
+						outline: none;
+						background: none;
+						border: none;
+						border-bottom: 1px solid $primary-text-color;
+						line-height: 30px;
+
+						&::placeholder {
+							color: $primary-text-color;
+							font-size: clamp(0.7rem, 2vw, 0.9rem);
+						}
+					}
+					& [placeholder]::-webkit-input-placeholder {
+						transition: color 0.5s ease;
+					}
+					& [placeholder]:focus::-webkit-input-placeholder {
+						color: transparent;
+						transition: color 0.5s ease;
+					}
 				}
 			}
 		}
@@ -59,6 +89,16 @@
 		& button {
 			@include button($button-color-2, clamp(5.5rem, 30%, 9rem), 2.5rem);
 			font-size: clamp(0.6rem, 2vw, 0.8rem);
+		}
+
+		& p {
+			@include error-message(clamp(0.7rem, 1.5vw, 0.9rem));
+			margin: 1rem 0 1.5rem 0;
+		}
+
+		& h4 {
+			@include succes-message(clamp(0.7rem, 1.5vw, 1rem));
+			margin: 0 1rem 1.5rem 0;
 		}
 	}
 }

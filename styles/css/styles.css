@@ -1516,12 +1516,13 @@ nav {
 
 .register-container {
   width: 100%;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1533,12 +1534,12 @@ nav {
 
 .register-container h1 {
   font-size: clamp(1.8rem, 7vw, 4.5rem);
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .register-container .register-form {
-  height: 80vh;
-  width: 70%;
+  height: 100vh;
+  width: clamp(25vh, 50%, 50vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1554,7 +1555,24 @@ nav {
           flex-direction: column;
 }
 
-.register-container .register-form div {
+.register-container .register-form .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-container .register-form .container .input-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1565,11 +1583,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1rem;
 }
 
-.register-container .register-form div input {
-  width: clamp(200px, 50%, 450px);
+.register-container .register-form .container .input-container input {
+  width: 100%;
   margin-left: 0.5rem;
   outline: none;
   background: none;
@@ -1578,38 +1595,39 @@ nav {
   line-height: 30px;
 }
 
-.register-container .register-form div input::-webkit-input-placeholder {
+.register-container .register-form .container .input-container input::-webkit-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
-.register-container .register-form div input:-ms-input-placeholder {
+.register-container .register-form .container .input-container input:-ms-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
-.register-container .register-form div input::-ms-input-placeholder {
+.register-container .register-form .container .input-container input::-ms-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
-.register-container .register-form div input::placeholder {
+.register-container .register-form .container .input-container input::placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
-.register-container .register-form div [placeholder]::-webkit-input-placeholder {
+.register-container .register-form .container .input-container [placeholder]::-webkit-input-placeholder {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
-.register-container .register-form div [placeholder]:focus::-webkit-input-placeholder {
+.register-container .register-form .container .input-container [placeholder]:focus::-webkit-input-placeholder {
   color: transparent;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
 .register-container .register-form .name-surname-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1619,14 +1637,75 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.register-container .register-form .name-surname-container input {
-  width: clamp(100px, 25%, 220px);
+.register-container .register-form .name-surname-container .name-container,
+.register-container .register-form .name-surname-container .surname-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.register-container .register-form .name-surname-container .name {
-  margin-right: 1rem;
+.register-container .register-form .name-surname-container .name-container input,
+.register-container .register-form .name-surname-container .surname-container input {
+  width: clamp(110px, 90%, 200px);
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffffb8;
+  line-height: 30px;
+}
+
+.register-container .register-form .name-surname-container .name-container input::-webkit-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container input::-webkit-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.register-container .register-form .name-surname-container .name-container input:-ms-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container input:-ms-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.register-container .register-form .name-surname-container .name-container input::-ms-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container input::-ms-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.register-container .register-form .name-surname-container .name-container input::placeholder,
+.register-container .register-form .name-surname-container .surname-container input::placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.register-container .register-form .name-surname-container .name-container [placeholder]::-webkit-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container [placeholder]::-webkit-input-placeholder {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.register-container .register-form .name-surname-container .name-container [placeholder]:focus::-webkit-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container [placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 .register-container button {
@@ -1663,6 +1742,20 @@ nav {
 .register-container button:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.register-container p {
+  color: rgba(37, 3, 3, 0.815);
+  font-weight: 900;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  margin: 1rem 0 1.5rem 0;
+}
+
+.register-container h4 {
+  color: rgba(5, 116, 23, 0.801);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  margin: 0 1rem 1.5rem 0;
 }
 
 @media screen and (max-width: 630px) {
