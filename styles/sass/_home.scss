@@ -72,11 +72,18 @@
       outline: none;
       font-size: inherit;
       padding: 0.3em 1.5em;
+      text-decoration: none;
       background: #eadedb;
-      border-radius: 0.5em;
       border: none;
       color: rgba(0, 0, 0, 0.794);
       font-size: clamp(1em, 1.7vw, 3em);
+      border-radius: 0.25em;
+      box-shadow: 0.1em 0.1em 0.1em #3a2e39;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        box-shadow: none;
+      }
     }
   }
 }

@@ -93,7 +93,7 @@ const Catalog = () => {
           )}
         </div>
       </div>
-      <div className="search-controls">
+      <div className="search-controls bottom-controls">
         <button
           className="search-controls__left"
           onClick={() => paginationToggle("PREV_PAGE")}
@@ -103,7 +103,7 @@ const Catalog = () => {
           onClick={() => paginationToggle("NEXT_PAGE")}
         ></button>
       </div>
-      <Footer />;
+      <Footer />
     </main>
   );
 };

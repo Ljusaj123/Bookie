@@ -1,0 +1,16 @@
+---
+title: "The Devil You Know by Terry Tyler"
+date: "July 4, 2017"
+excerpt: "I was instantly intrigued by this synopsis; my only worry was I’d get slightly confused with the characters. So, I want to start off this review saying, with a full cast of characters, Tyler put a lot of thought into each character, and their individuality shone through."
+cover_image: "/slika10.jpg"
+category: "crime"
+source: "https://keeperofpages.com/2017/07/04/book-review-the-devil-you-know-by-terry-tyler/"
+---
+
+I was instantly intrigued by this synopsis; my only worry was I’d get slightly confused with the characters. So, I want to start off this review saying, with a full cast of characters, Tyler put a lot of thought into each character, and their individuality shone through. Of course, it helped that at the beginning of each chapter, the person narrating the chapter was identified, but had these disappeared mid-way through the book, providing I’d already been introduced to that character, I’d still have known who was talking – that’s the strength of Tyler’s character development. And this in-depth level of character developed is exactly what you want in a character driven novel.
+
+It was near on impossible to figure out who the serial killer was! It could have been anyone and that’s what made this book unique – how close to reality it was. When you look back in history, some real life serial killers came across as so likeable, others were heinous from the get go, some had good jobs and on the outside appeared to be living normal lives – you just don’t know what’s really going on in someone’s head and what they may or may not be capable of. Have you ever doubted someone close to you, where they said they were going, who they said they were with? Or have you even read about events or been told a story and thought “hmm, something’s not right” or “that’s a little too convenient”? Tyler takes this notion and intensifies it tenfold – when you take a close look at someone’s life, and begin to break down their daily activities along with what they are telling you, it’s scary what your brain comes up with.
+
+My only negative regarding this book was its length. I think it would have worked better had it been shorter because it’s a psychological drama, the mystery element is there but it’s not strong because it’s not the focus. There isn’t heaps of action, again because of the nature of this book, so towards the end of this book I was just ready for the killer to be revealed because it began to feel a bit monotonous. I like that Tyler used a variety of characters to ensure everyone’s home life and experiences were different, but again, this didn’t keep ‘the thrill’ alive for the entire book and my engagement diminished towards the end.
+
+I do believe you have to be a fan of both character driven novels and psychological dramas to enjoy this one. It’s uniquely done and for that reason I’m glad I read it, it’s not a theme that’s been overdone and I applaud Tyler for capitalising on this idea, these fleeting thoughts everyone and anyone may have and turning it into a novel. I’m glad I read it and I certainly will remember it, it’s just a shame, my engagement dipped towards the end. Nonetheless, it’s still a book I’d recommend and I’d read more of Tyler’s books.

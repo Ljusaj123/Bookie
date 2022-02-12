@@ -3,7 +3,6 @@
 }
 
 .search-form {
-  // border: 1px solid red;
   width: clamp(80vw, 40em, 95vw);
   margin: 0 auto;
   padding: 2em 0;
@@ -72,4 +71,8 @@
     background: url("../../assets/right-arrow.png") no-repeat center
       center/cover;
   }
+}
+
+.bottom-controls {
+  padding: 1em 1em 5em 1em;
 }

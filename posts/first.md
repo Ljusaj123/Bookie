@@ -1,57 +1,16 @@
 ---
-title: "Django Crash Course"
-date: "March 5, 2021"
-excerpt: "Django is a very powerful, high level Python framework for building web applications"
-cover_image: "../assets/slika1.jpg"
+title: "Carrie by Stephen King"
+date: "May 16, 2019"
+excerpt: "As far as debuts go, this is a bloody impressive one! Carrie is a horror novel that uses it slow pace to draw you in. This slower pace essentially slows down the horror, Carrie’s hell at home, and Carrie’s hell at school, I guess you could call Carrie an anti-hero, because King’s storytelling really does have you offering her your sympathies, hoping for a revenge plot."
+cover_image: "/slika1.jpg"
+category: "horror"
+source: "https://keeperofpages.com/2019/05/16/book-review-carrie-by-stephen-king/"
 ---
 
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+As far as debuts go, this is a bloody impressive one! Carrie is a horror novel that uses it slow pace to draw you in. This slower pace essentially slows down the horror, Carrie’s hell at home, and Carrie’s hell at school, I guess you could call Carrie an anti-hero, because King’s storytelling really does have you offering her your sympathies, hoping for a revenge plot.
 
-1. Serrae enim Etruscam aquis
-2. Et premis et flumine frontem minatur oppressos
-3. Inquam rector Icarus possum vim tumulo propiusque
-4. Vulnus se Latreus
-5. Aptumque bis
+I was worried about reading this novel as I’ve watched the movies and I remember the most recent one very well, but despite knowing the events that would occur in this novel, I still greatly enjoyed it. And I’m sure Constant Readers will agree with me, this was the birth of ‘the shine’ – the abilities that are so prevalent in King’s novels. In Carrie, it takes the form of telekinesis. It’s interesting because the blurb clearly states Carrie has this gift so the suspense is there from the first page, wondering when and where Carrie will first use her ability, will it be intentional or accidental, will it be to help or to harm?
 
-## Turpius Aegides membris colat volentes fallere
+From his very first novel, King mastered writing unlikeable characters; it’s a raging success when a reader actively dislikes certain characters with a passion, it shows how well-crafted the character is.
 
-Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
-consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
-Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
-procul fugitque corpora iugales!
-
-    var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
-            rgb + nybbleBaseband;
-    permalinkCertificateMacintosh(ergonomicsIsdnDns);
-    boot = bridgeDaemonActive;
-
-## O contra diu
-
-Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
-premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
-sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
-nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
-rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
-nam nil, pariter.
-
-Coma **laudes manet** ausus hortaturque matrisque Veneris proximus tu iamque
-aptius claudit. Tmolus tetigere iussos animumque quid poplite Hippotaden? Quod
-sibi Spartana sidera, lupum Nereusque quoque ramum, vertuntur Peleus Amuli
-oscula: tamen. Surgere Epidaurius movit crede soceri Euboicam quoque.
-
-Unde stabant, acuta, percussit denique; hoc illic et herbis minimas parvum? Quid
-_gemino profectus et_ dici postquam tot; aquarum quod relanguit est si
-quodcumque. Ossaque protinus, quod somno est, repetit, hoc passu est. Qui devia;
-respice humum vobis oscula, in Lotis nymphae.
-
-Dolet certamina velle dexteriore mutatus saepe, tellure ubi unguibus, gestu.
-Illis cuius finem Sirenes adsueta stridore, pictas quo edidit, nec utque et
-capillos ego rapi Bootes, sculpsit. Protinus sibi denique sibi primum Acheloides
-ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
-visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
-porrigar **patriam** Alcmene: attonitas.
+At under 300 pages, this novel is perfect for people wanting to read a King novel, but don’t want to read a book of 500+ pages. This shorter novel gives you a glimpse in to the darker imagination of King, the horror and the brilliant storytelling. This is a King I definitely recommend, and I’m looking forward to continuing reading my way through all his books.
