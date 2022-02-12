@@ -25,13 +25,6 @@ const Register = () => {
 
 
     }
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setFromErrors(initalvalues);
-    //     }, 4000);
-    // });
-
     const validate = (values) => {
         const error = {};
 
