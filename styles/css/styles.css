@@ -457,7 +457,7 @@ nav {
 }
 
 .newsletter-container {
-  height: 80%;
+  height: 100%;
   width: 100%;
   margin: auto 0;
   display: -webkit-box;
@@ -480,9 +480,26 @@ nav {
   text-align: center;
 }
 
-.newsletter-container .sign-in {
+.newsletter-container .sign-in-form {
+  height: 100%;
   width: 100%;
-  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newsletter-container .sign-in-form .form-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,8 +511,8 @@ nav {
           align-items: center;
 }
 
-.newsletter-container .sign-in input {
-  width: clamp(100px, 30%, 350px);
+.newsletter-container .sign-in-form .form-container input {
+  width: clamp(250px, 30%, 350px);
   outline: none;
   background: none;
   border: none;
@@ -505,38 +522,38 @@ nav {
   margin-right: 2rem;
 }
 
-.newsletter-container .sign-in input::-webkit-input-placeholder {
+.newsletter-container .sign-in-form .form-container input::-webkit-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
-.newsletter-container .sign-in input:-ms-input-placeholder {
+.newsletter-container .sign-in-form .form-container input:-ms-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
-.newsletter-container .sign-in input::-ms-input-placeholder {
+.newsletter-container .sign-in-form .form-container input::-ms-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
-.newsletter-container .sign-in input::placeholder {
+.newsletter-container .sign-in-form .form-container input::placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
-.newsletter-container .sign-in [placeholder]::-webkit-input-placeholder {
+.newsletter-container .sign-in-form .form-container [placeholder]::-webkit-input-placeholder {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
-.newsletter-container .sign-in [placeholder]:focus::-webkit-input-placeholder {
+.newsletter-container .sign-in-form .form-container [placeholder]:focus::-webkit-input-placeholder {
   color: transparent;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
-.newsletter-container .sign-in button {
+.newsletter-container .sign-in-form .form-container button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -551,12 +568,12 @@ nav {
   font-size: clamp(0.6rem, 3vw, 0.9rem);
 }
 
-.newsletter-container .sign-in button:focus {
+.newsletter-container .sign-in-form .form-container button:focus {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
           box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
-.newsletter-container .sign-in button:hover {
+.newsletter-container .sign-in-form .form-container button:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
           box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
   -webkit-transform: translate3d(0, 1px, 0);
@@ -567,9 +584,25 @@ nav {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.newsletter-container .sign-in button:active {
+.newsletter-container .sign-in-form .form-container button:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.newsletter-container .sign-in-form .error-messages {
+  margin-top: 1rem;
+}
+
+.newsletter-container .sign-in-form .error-messages p {
+  color: rgba(37, 3, 3, 0.815);
+  font-weight: 900;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+}
+
+.newsletter-container .sign-in-form .error-messages h4 {
+  color: rgba(5, 116, 23, 0.801);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 
 .footer {
@@ -682,7 +715,7 @@ nav {
 .footer-container .contact-footer form textarea {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   background: none;
   outline: none;
   border: none;
@@ -719,7 +752,6 @@ nav {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   margin: 0 auto;
   font-size: clamp(0.8rem, 1vw, 1rem);
-  transition: transform 0.3s ease;
 }
 
 .footer-container .contact-footer form button:focus {
@@ -743,25 +775,18 @@ nav {
           transform: scale(0.9);
 }
 
-.footer-container .contact-footer form button:focus {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
-          box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+.footer-container .contact-footer form p {
+  color: rgba(37, 3, 3, 0.815);
+  font-weight: 900;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  margin-bottom: 2rem;
 }
 
-.footer-container .contact-footer form button:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
-          box-shadow: rgba(0, 0, 0, 0.7) 2px 8px 8px -5px;
-  -webkit-transform: translate3d(0, 1px, 0);
-          transform: translate3d(0, 1px, 0);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.footer-container .contact-footer form button:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+.footer-container .contact-footer form h4 {
+  color: rgba(5, 116, 23, 0.801);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  margin-top: 2rem;
 }
 
 .footer .made-by-footer {
@@ -785,6 +810,10 @@ nav {
   font-size: clamp(1.5rem, 2.5vw, 2.1rem);
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.footer .made-by-footer h1 span {
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
 
 .footer .made-by-footer .social-icons-footer {
@@ -929,7 +958,7 @@ nav {
   height: -moz-max-content;
   height: max-content;
   width: 70%;
-  margin: 3rem auto;
+  margin: 5rem auto;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -947,7 +976,7 @@ nav {
 }
 
 .about .introduction h1 {
-  font-size: clamp(1.8rem, 7vw, 5.5rem);
+  font-size: clamp(2rem, 7vw, 5.5rem);
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -962,21 +991,21 @@ nav {
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  margin: 10rem 0;
+  margin: 5rem 0;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .about .vision .picture-container {
-  width: 60%;
+  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,15 +1017,9 @@ nav {
           align-items: center;
 }
 
-.about .vision .picture-container div {
-  background-color: aqua;
-  height: 100px;
-  width: 100px;
-}
-
 .about .vision .text-container {
   width: 40%;
-  padding: 1rem 3rem;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1013,12 +1036,13 @@ nav {
 }
 
 .about .vision .text-container h1 {
-  font-size: clamp(1.8rem, 6vw, 4.5rem);
-  margin-bottom: 3rem;
+  font-size: clamp(1.5rem, 6vw, 4.5rem);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .about .vision .text-container p {
-  font-size: clamp(0.9rem, 3vw, 1.3rem);
+  font-size: clamp(0.85rem, 2vw, 1.3rem);
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -1502,7 +1526,7 @@ nav {
 }
 
 .login-container h1 {
-  font-size: clamp(1.8rem, 8vw, 4.5rem);
+  font-size: clamp(0.8rem, 8vw, 4.5rem);
   margin-bottom: 2.5rem;
 }
 
@@ -1535,7 +1559,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .login-container .login-form .username-container input,
@@ -1584,6 +1608,20 @@ nav {
   color: transparent;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
+}
+
+.login-container .login-form p {
+  color: rgba(37, 3, 3, 0.815);
+  font-weight: 900;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  margin-bottom: 3rem;
+}
+
+.login-container .login-form h4 {
+  color: rgba(5, 116, 23, 0.801);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  margin: 1.5rem 0;
 }
 
 .login-container .login-form button {
@@ -1640,12 +1678,13 @@ nav {
 
 .register-container {
   width: 100%;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1657,12 +1696,12 @@ nav {
 
 .register-container h1 {
   font-size: clamp(1.8rem, 7vw, 4.5rem);
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .register-container .register-form {
-  height: 80vh;
-  width: 70%;
+  height: 100vh;
+  width: clamp(25vh, 50%, 50vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1678,7 +1717,24 @@ nav {
           flex-direction: column;
 }
 
-.register-container .register-form div {
+.register-container .register-form .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-container .register-form .container .input-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1689,11 +1745,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1rem;
 }
 
-.register-container .register-form div input {
-  width: clamp(200px, 50%, 450px);
+.register-container .register-form .container .input-container input {
+  width: 100%;
   margin-left: 0.5rem;
   outline: none;
   background: none;
@@ -1702,38 +1757,39 @@ nav {
   line-height: 30px;
 }
 
-.register-container .register-form div input::-webkit-input-placeholder {
+.register-container .register-form .container .input-container input::-webkit-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
-.register-container .register-form div input:-ms-input-placeholder {
+.register-container .register-form .container .input-container input:-ms-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
-.register-container .register-form div input::-ms-input-placeholder {
+.register-container .register-form .container .input-container input::-ms-input-placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
-.register-container .register-form div input::placeholder {
+.register-container .register-form .container .input-container input::placeholder {
   color: #ffffffb8;
   font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
-.register-container .register-form div [placeholder]::-webkit-input-placeholder {
+.register-container .register-form .container .input-container [placeholder]::-webkit-input-placeholder {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
-.register-container .register-form div [placeholder]:focus::-webkit-input-placeholder {
+.register-container .register-form .container .input-container [placeholder]:focus::-webkit-input-placeholder {
   color: transparent;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
 
 .register-container .register-form .name-surname-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1743,14 +1799,75 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.register-container .register-form .name-surname-container input {
-  width: clamp(100px, 25%, 220px);
+.register-container .register-form .name-surname-container .name-container,
+.register-container .register-form .name-surname-container .surname-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.register-container .register-form .name-surname-container .name {
-  margin-right: 1rem;
+.register-container .register-form .name-surname-container .name-container input,
+.register-container .register-form .name-surname-container .surname-container input {
+  width: clamp(110px, 90%, 200px);
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffffb8;
+  line-height: 30px;
+}
+
+.register-container .register-form .name-surname-container .name-container input::-webkit-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container input::-webkit-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.register-container .register-form .name-surname-container .name-container input:-ms-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container input:-ms-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.register-container .register-form .name-surname-container .name-container input::-ms-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container input::-ms-input-placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.register-container .register-form .name-surname-container .name-container input::placeholder,
+.register-container .register-form .name-surname-container .surname-container input::placeholder {
+  color: #ffffffb8;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+}
+
+.register-container .register-form .name-surname-container .name-container [placeholder]::-webkit-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container [placeholder]::-webkit-input-placeholder {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.register-container .register-form .name-surname-container .name-container [placeholder]:focus::-webkit-input-placeholder,
+.register-container .register-form .name-surname-container .surname-container [placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 .register-container button {
@@ -1789,6 +1906,20 @@ nav {
           transform: scale(0.9);
 }
 
+.register-container p {
+  color: rgba(37, 3, 3, 0.815);
+  font-weight: 900;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  margin: 1rem 0 1.5rem 0;
+}
+
+.register-container h4 {
+  color: rgba(5, 116, 23, 0.801);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  margin: 0 1rem 1.5rem 0;
+}
+
 @media screen and (max-width: 630px) {
   .footer-container {
     -webkit-box-orient: vertical;
@@ -1823,16 +1954,14 @@ nav {
 }
 
 @media screen and (max-width: 630px) {
-  .newsletter-container .sign-in {
+  .newsletter-container .sign-in-form .form-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 75%;
   }
-  .newsletter-container .sign-in input {
-    width: 80%;
-    margin: 0 auto;
+  .newsletter-container .sign-in-form .form-container input {
+    margin-right: 0;
     margin-bottom: 2rem;
   }
   .about .introduction {
@@ -1845,9 +1974,11 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .about .vision h1 {
+    margin-top: 2rem;
+  }
   .about .vision .text-container {
     width: 90%;
     padding: 0;
   }
 }
-/*# sourceMappingURL=styles.css.map */

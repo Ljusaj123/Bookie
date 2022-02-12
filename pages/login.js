@@ -1,8 +1,48 @@
+import { React, useState } from 'react';
 import Footer from '../modules/footer/Footer';
 import { FaUserAlt, FaLock } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
+import Link from 'next/link';
 
 const Login = () => {
+
+    const initalvalues = { username: "", password: "", success: "" };
+    const [formValues, setFormValues] = useState(initalvalues);
+    const [formErrors, setFromErrors] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormValues({ ...formValues, [name]: value });
+
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setFromErrors(validate(formValues));
+        setIsSubmit(true);
+        setFormValues(initalvalues);
+
+    }
+
+    const validate = (values) => {
+        const error = {};
+
+        if (!values.username) {
+            error.username = "Username is required!"
+        }
+        if (!values.password) {
+            error.password = "Password is required!"
+        }
+
+        if (Object.keys(error).length === 0) {
+            error.success = "You have been loged!"
+
+        }
+
+        return error;
+
+    }
     return (
         <section className="login">
             <header>
@@ -10,21 +50,41 @@ const Login = () => {
             </header>
             <div className="login-container">
                 <h1>Login</h1>
-                <form className="login-form">
+                <form className="login-form" onSubmit={handleSubmit}>
                     <div className="username-container">
                         <FaUserAlt />
-                        <input type="text" className="username" placeholder="enter your username" />
+                        <input
+                            type="text"
+                            name="username"
+                            className="username"
+                            placeholder="enter your username"
+                            value={formValues.username}
+                            onChange={handleChange}
+                            autocomplete="off" />
                     </div>
+                    <p>{formErrors.username}</p>
                     <div className="password-container">
                         <FaLock />
-                        <input type="password" className="password" placeholder="enter your password" />
+                        <input
+                            type="password"
+                            name='password'
+                            placeholder="enter your password"
+                            value={formValues.password}
+                            onChange={handleChange}
+                            autocomplete="off" />
                     </div>
-                    <button>
-                        Login
-                    </button>
+                    <p>{formErrors.password}</p>
+
+                    <button className="btn">Login</button>
+
+                    <h4>{formErrors.success}</h4>
                 </form>
                 <div className="no-account">
-                    <p>don't have an account yet? <a href="#">Register now</a></p>
+                    <p>don't have an account yet?
+                        <Link href={'../register'}>
+                            <a href="#">Register now</a>
+                        </Link>
+                    </p>
                 </div>
             </div>
             <Footer />
