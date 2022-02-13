@@ -7,16 +7,12 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #ffffffb8;
+  color: #fffffff8;
   font-weight: 500;
 }
 
 body {
   font-family: "Playfair Display", serif;
-}
-
-[placeholder] {
-  font-family: monospace;
 }
 
 * {
@@ -51,9 +47,9 @@ body {
 
 .header {
   width: 100%;
-  min-height: calc(100vh + 5em);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../../public/hero.jpg") no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../../public/hero.jpg") no-repeat center center/cover;
+  min-height: 60em;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("/hero.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/hero.jpg") no-repeat center center/cover;
   position: relative;
   z-index: 1;
 }
@@ -71,7 +67,7 @@ body {
 .header__scroll-down::after {
   position: absolute;
   bottom: 10%;
-  left: 35%;
+  left: 37.5%;
   background: transparent;
   border: 0.1em solid white;
   width: 0.5em;
@@ -113,7 +109,7 @@ body {
   font-size: inherit;
   padding: 0.3em 1.5em;
   text-decoration: none;
-  background: #eadedb;
+  background: #f7ebebd7;
   border: none;
   color: rgba(0, 0, 0, 0.794);
   font-size: clamp(1em, 1.7vw, 3em);
@@ -169,7 +165,7 @@ nav {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-  color: #ffffffd3;
+  color: #ffffffe7;
 }
 
 .navbar-wrapper .desktop-navigation {
@@ -193,14 +189,14 @@ nav {
   text-transform: lowercase;
   position: relative;
   cursor: pointer;
-  color: #ffffffd3;
+  color: #ffffffe7;
   text-decoration: none;
 }
 
 .navbar-wrapper .desktop-navigation a::after {
   content: "";
   position: absolute;
-  background: #ffffffd3 !important;
+  background: #ffffffe7 !important;
   width: 0%;
   height: 0.15em;
   bottom: -0.25em;
@@ -234,7 +230,7 @@ nav {
 .burger .bar {
   width: 2.5em;
   height: 0.25em;
-  background: #ffffffd3;
+  background: #ffffffe7;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -255,10 +251,12 @@ nav {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-transform: translateX(-100vw);
-          transform: translateX(-100vw);
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,8 +267,8 @@ nav {
 }
 
 .open-mobile {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 .open-burger :nth-child(1) {
@@ -288,7 +286,7 @@ nav {
 }
 
 .booklist-wrapper {
-  background: #968580;
+  background: #7e6e6a;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -296,6 +294,7 @@ nav {
   gap: 5em;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
+  min-height: 60em;
   color: white;
   padding: 5em 0;
 }
@@ -317,6 +316,13 @@ nav {
       grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 }
 
+@media (max-width: 500px) {
+  .booklist {
+    -ms-grid-columns: (minmax(15em, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+}
+
 .booklist__card {
   -webkit-box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
           box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
@@ -334,6 +340,11 @@ nav {
   place-items: center;
   gap: 1em;
   text-align: center;
+}
+
+.booklist__card h2,
+.booklist__card h3 {
+  color: white;
 }
 
 .booklist__card img {
@@ -375,8 +386,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url(../../assets/show-catalog-image.jpg) center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../../assets/show-catalog-image.jpg) center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url("/show-catalog-image.jpg") center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/show-catalog-image.jpg") center;
   background-size: cover;
 }
 
@@ -411,7 +422,7 @@ nav {
   background: #f7ebebd7;
   width: clamp(7rem, 30%, 12rem);
   height: 3rem;
-  color: #ffffffb8;
+  color: #fffffff8;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -444,7 +455,7 @@ nav {
 .newsletter {
   height: 50vh;
   padding: 2rem 0.5rem;
-  background-color: #968580;
+  background-color: #7e6e6a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,29 +527,29 @@ nav {
   outline: none;
   background: none;
   border: none;
-  border-bottom: 1px solid #ffffffb8;
-  color: #ffffffb8;
+  border-bottom: 1px solid #fffffff8;
+  color: #fffffff8;
   line-height: 30px;
   margin-right: 2rem;
 }
 
 .newsletter-container .sign-in-form .form-container input::-webkit-input-placeholder {
-  color: #ffffffb8;
+  color: #fffffff8;
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
 .newsletter-container .sign-in-form .form-container input:-ms-input-placeholder {
-  color: #ffffffb8;
+  color: #fffffff8;
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
 .newsletter-container .sign-in-form .form-container input::-ms-input-placeholder {
-  color: #ffffffb8;
+  color: #fffffff8;
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
 .newsletter-container .sign-in-form .form-container input::placeholder {
-  color: #ffffffb8;
+  color: #fffffff8;
   font-size: clamp(0.7rem, 3vw, 0.9rem);
 }
 
@@ -560,7 +571,7 @@ nav {
   background: #3a2e39;
   width: clamp(3.5rem, 30%, 7rem);
   height: 2.3rem;
-  color: #ffffffb8;
+  color: #fffffff8;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -606,9 +617,6 @@ nav {
 }
 
 .footer {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   padding: 3rem 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -709,6 +717,7 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   width: clamp(200px, 20vw, 400px);
+  font-family: inherit;
 }
 
 .footer-container .contact-footer form input,
@@ -719,12 +728,28 @@ nav {
   background: none;
   outline: none;
   border: none;
-  border-bottom: 1px solid #ffffffb8;
+  border-bottom: 1px solid #fffffff8;
   line-height: 30px;
 }
 
 .footer-container .contact-footer form textarea {
   height: 10rem;
+}
+
+.footer-container .contact-footer form textarea::-webkit-input-placeholder {
+  font-family: sans-serif;
+}
+
+.footer-container .contact-footer form textarea:-ms-input-placeholder {
+  font-family: sans-serif;
+}
+
+.footer-container .contact-footer form textarea::-ms-input-placeholder {
+  font-family: sans-serif;
+}
+
+.footer-container .contact-footer form textarea::placeholder {
+  font-family: sans-serif;
 }
 
 .footer-container .contact-footer form [placeholder]::-webkit-input-placeholder {
@@ -742,10 +767,10 @@ nav {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background: #968580;
+  background: #7e6f6b;
   width: 35%;
   height: 2.2rem;
-  color: #ffffffb8;
+  color: #fffffff8;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -848,7 +873,8 @@ nav {
 }
 
 .catalog-main {
-  background: #968580;
+  background: #7e6e6a;
+  min-height: 70em;
 }
 
 .search-form {
@@ -902,7 +928,7 @@ nav {
 .search-form .search-icon {
   outline: none;
   border: none;
-  background: url("../../assets/search-icon.png") no-repeat center center/cover;
+  background: url("/search-icon.png") no-repeat center center/cover;
   padding: 0.5em 0.75em;
   cursor: pointer;
   width: 3em;
@@ -934,11 +960,11 @@ nav {
 }
 
 .search-controls__left {
-  background: url("../../assets/left-arrow.png") no-repeat center center/cover;
+  background: url("/left-arrow.png") no-repeat center center/cover;
 }
 
 .search-controls__right {
-  background: url("../../assets/right-arrow.png") no-repeat center center/cover;
+  background: url("/right-arrow.png") no-repeat center center/cover;
 }
 
 .bottom-controls {
@@ -946,8 +972,8 @@ nav {
 }
 
 .about {
-  background: -webkit-gradient(linear, left top, left bottom, from(#968580), color-stop(#968580), to(#ffffffb8));
-  background: linear-gradient(to bottom, #968580, #968580, #ffffffb8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7e6e6a), color-stop(#7e6e6a), to(#fffffff8));
+  background: linear-gradient(to bottom, #7e6e6a, #7e6e6a, #fffffff8);
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -1052,7 +1078,7 @@ nav {
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  background-color: #968580;
+  background-color: #7e6e6a;
 }
 
 .blog-container {
@@ -1138,7 +1164,7 @@ nav {
 .blog-container .search-container .search-icon {
   outline: none;
   border: none;
-  background: url("../../assets/search-icon.png") no-repeat center center/cover;
+  background: url("/search-icon.png") no-repeat center center/cover;
   padding: 0.5em 0.75em;
   cursor: pointer;
   width: 3em;
@@ -1188,7 +1214,7 @@ nav {
   background: #55474e;
   width: 100px;
   height: 40px;
-  color: #ffffffb8;
+  color: #fffffff8;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -1336,7 +1362,7 @@ nav {
 }
 
 .post-container .text-container h1 {
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
 }
 
 .post-container .text-container h2 {
@@ -1377,13 +1403,13 @@ nav {
   text-transform: lowercase;
   border-radius: 0.25em;
   background: #55474e;
-  color: #ffffffb8;
+  color: #fffffff8;
   cursor: pointer;
   margin: 3em 0 0 0;
 }
 
 .posters {
-  background: #968580;
+  background: #7e6e6a;
   padding: 5em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1416,7 +1442,7 @@ nav {
   background: #55474e;
   width: 100px;
   height: 40px;
-  color: #ffffffb8;
+  color: #fffffff8;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -1448,7 +1474,7 @@ nav {
   width: clamp(80vw, 50em, 90vw);
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: #968580;
+  background-color: #7e6e6a;
   border-radius: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1503,7 +1529,7 @@ nav {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background: #968580;
+  background: #7e6e6a;
 }
 
 .login-container {
@@ -1519,8 +1545,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 70vh;
-  width: 100vw;
+  width: 100%;
   padding-top: 2rem;
   padding-bottom: 6rem;
 }
@@ -1569,32 +1594,37 @@ nav {
   outline: none;
   border: none;
   background: none;
-  border-bottom: 1px solid #ffffffb8;
+  border-bottom: 1px solid #fffffff8;
   line-height: 30px;
+  font-size: clamp(1rem, 1.3vw, 2.2rem);
 }
 
 .login-container .login-form .username-container input::-webkit-input-placeholder,
 .login-container .login-form .password-container input::-webkit-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .login-container .login-form .username-container input:-ms-input-placeholder,
 .login-container .login-form .password-container input:-ms-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .login-container .login-form .username-container input::-ms-input-placeholder,
 .login-container .login-form .password-container input::-ms-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .login-container .login-form .username-container input::placeholder,
 .login-container .login-form .password-container input::placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .login-container .login-form .username-container [placeholder]::-webkit-input-placeholder,
@@ -1631,7 +1661,7 @@ nav {
   background: #3a2e39;
   width: clamp(4rem, 40%, 7.5rem);
   height: 2.4rem;
-  color: #ffffffb8;
+  color: #fffffff8;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -1670,10 +1700,7 @@ nav {
 }
 
 .register {
-  background-color: #968580;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  background-color: #7e6e6a;
 }
 
 .register-container {
@@ -1700,8 +1727,7 @@ nav {
 }
 
 .register-container .register-form {
-  height: 100vh;
-  width: clamp(25vh, 50%, 50vh);
+  width: clamp(20vw, 40em, 90vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1753,28 +1779,29 @@ nav {
   outline: none;
   background: none;
   border: none;
-  border-bottom: 1px solid #ffffffb8;
+  border-bottom: 1px solid #fffffff8;
   line-height: 30px;
+  font-size: clamp(1rem, 1.3vw, 2.2rem);
 }
 
 .register-container .register-form .container .input-container input::-webkit-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
 }
 
 .register-container .register-form .container .input-container input:-ms-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
 }
 
 .register-container .register-form .container .input-container input::-ms-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
 }
 
 .register-container .register-form .container .input-container input::placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
 }
 
 .register-container .register-form .container .input-container [placeholder]::-webkit-input-placeholder {
@@ -1793,9 +1820,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1807,13 +1834,13 @@ nav {
 
 .register-container .register-form .name-surname-container .name-container,
 .register-container .register-form .name-surname-container .surname-container {
-  width: 50%;
+  width: clamp(20vw, 40em, 95vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1829,32 +1856,33 @@ nav {
   outline: none;
   background: none;
   border: none;
-  border-bottom: 1px solid #ffffffb8;
+  border-bottom: 1px solid #fffffff8;
   line-height: 30px;
+  font-size: clamp(1rem, 1.3vw, 2.2rem);
 }
 
 .register-container .register-form .name-surname-container .name-container input::-webkit-input-placeholder,
 .register-container .register-form .name-surname-container .surname-container input::-webkit-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
 }
 
 .register-container .register-form .name-surname-container .name-container input:-ms-input-placeholder,
 .register-container .register-form .name-surname-container .surname-container input:-ms-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
 }
 
 .register-container .register-form .name-surname-container .name-container input::-ms-input-placeholder,
 .register-container .register-form .name-surname-container .surname-container input::-ms-input-placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
 }
 
 .register-container .register-form .name-surname-container .name-container input::placeholder,
 .register-container .register-form .name-surname-container .surname-container input::placeholder {
-  color: #ffffffb8;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  color: #fffffff8;
+  font-size: inherit;
 }
 
 .register-container .register-form .name-surname-container .name-container [placeholder]::-webkit-input-placeholder,
@@ -1870,6 +1898,14 @@ nav {
   transition: color 0.5s ease;
 }
 
+.register-container .register-form .name-surname-container .name-container {
+  place-items: flex-start;
+}
+
+.register-container .register-form .name-surname-container .surname-container {
+  place-items: flex-end;
+}
+
 .register-container button {
   border: none;
   border-radius: 10px;
@@ -1877,7 +1913,7 @@ nav {
   background: #3a2e39;
   width: clamp(5.5rem, 30%, 9rem);
   height: 2.5rem;
-  color: #ffffffb8;
+  color: #fffffff8;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -1980,6 +2016,39 @@ nav {
   .about .vision .text-container {
     width: 90%;
     padding: 0;
+  }
+}
+
+.loading-spinner {
+  width: 10em;
+  height: 10em;
+  background: transparent;
+  border-radius: 50%;
+  border: 0.2em solid #fffffff8;
+  -webkit-animation: loading-animation 1s linear infinite;
+          animation: loading-animation 1s linear infinite;
+  border-right: 0.2em solid transparent;
+}
+
+@-webkit-keyframes loading-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=styles.css.map */

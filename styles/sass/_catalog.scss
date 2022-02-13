@@ -1,5 +1,6 @@
 .catalog-main {
-  background: #968580;
+  background: $secondary-background-color;
+  min-height: 70em;
 }
 
 .search-form {
@@ -35,8 +36,7 @@
   .search-icon {
     outline: none;
     border: none;
-    background: url("../../assets/search-icon.png") no-repeat center
-      center/cover;
+    background: url("/search-icon.png") no-repeat center center/cover;
     padding: 0.5em 0.75em;
     cursor: pointer;
     width: 3em;
@@ -65,11 +65,10 @@
   }
 
   &__left {
-    background: url("../../assets/left-arrow.png") no-repeat center center/cover;
+    background: url("/left-arrow.png") no-repeat center center/cover;
   }
   &__right {
-    background: url("../../assets/right-arrow.png") no-repeat center
-      center/cover;
+    background: url("/right-arrow.png") no-repeat center center/cover;
   }
 }
 

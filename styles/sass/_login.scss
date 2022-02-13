@@ -1,75 +1,77 @@
 .login {
-	height: max-content;
-	background: $secondary-background-color;
+  height: max-content;
+  background: $secondary-background-color;
 
-	&-container {
-		@include univerzalni-display(flex, space-around, center);
-		flex-direction: column;
-		height: 70vh;
-		width: 100vw;
-		padding-top: 2rem;
-		padding-bottom: 6rem;
+  &-container {
+    @include univerzalni-display(flex, space-around, center);
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
 
-		& h1 {
-			font-size: clamp(0.8rem, 8vw, 4.5rem);
-			margin-bottom: 2.5rem;
-		}
+    & h1 {
+      font-size: clamp(0.8rem, 8vw, 4.5rem);
+      margin-bottom: 2.5rem;
+    }
 
-		& .login-form {
-			width: 60vw;
-			@include univerzalni-display(flex, space-evenly, center);
-			flex-direction: column;
+    & .login-form {
+      width: 60vw;
+      @include univerzalni-display(flex, space-evenly, center);
+      flex-direction: column;
 
-			& .username-container,
-			& .password-container {
-				width: clamp(200px, 70%, 450px);
-				@include univerzalni-display(flex, center, center);
-				margin-bottom: 2rem;
+      & .username-container,
+      & .password-container {
+        width: clamp(200px, 70%, 450px);
+        @include univerzalni-display(flex, center, center);
+        margin-bottom: 2rem;
 
-				& input {
-					width: 100%;
-					margin-left: 1rem;
-					outline: none;
-					border: none;
-					background: none;
-					border-bottom: 1px solid $primary-text-color;
-					line-height: 30px;
+        & input {
+          width: 100%;
+          margin-left: 1rem;
+          outline: none;
+          border: none;
+          background: none;
+          border-bottom: 1px solid $primary-text-color;
+          line-height: 30px;
+          font-size: clamp(1rem, 1.3vw, 2.2rem);
 
-					&::placeholder {
-						color: $primary-text-color;
-						font-size: clamp(0.7rem, 2vw, 0.9rem);
-					}
-				}
-				& [placeholder]::-webkit-input-placeholder {
-					transition: color 0.5s ease;
-				}
-				& [placeholder]:focus::-webkit-input-placeholder {
-					color: transparent;
-					transition: color 0.5s ease;
-				}
-			}
+          &::placeholder {
+            color: $primary-text-color;
 
-			& p {
-				@include error-message();
-				margin-bottom: 3rem;
-			}
+            font-size: inherit;
+            font-family: inherit;
+          }
+        }
+        & [placeholder]::-webkit-input-placeholder {
+          transition: color 0.5s ease;
+        }
+        & [placeholder]:focus::-webkit-input-placeholder {
+          color: transparent;
+          transition: color 0.5s ease;
+        }
+      }
 
-			& h4 {
-				@include succes-message();
-				margin: 1.5rem 0;
-			}
-			& button {
-				@include button($button-color-2, clamp(4rem, 40%, 7.5rem), 2.4rem);
-				font-size: clamp(0.9rem, 3vw, 1rem);
-			}
-		}
+      & p {
+        @include error-message();
+        margin-bottom: 3rem;
+      }
 
-		& .no-account {
-			padding: 0 1rem;
-			& p {
-				font-size: clamp(0.9rem, 3vw, 1.2rem);
-				text-align: center;
-			}
-		}
-	}
+      & h4 {
+        @include succes-message();
+        margin: 1.5rem 0;
+      }
+      & button {
+        @include button($button-color-2, clamp(4rem, 40%, 7.5rem), 2.4rem);
+        font-size: clamp(0.9rem, 3vw, 1rem);
+      }
+    }
+
+    & .no-account {
+      padding: 0 1rem;
+      & p {
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
+        text-align: center;
+      }
+    }
+  }
 }

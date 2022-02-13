@@ -1,104 +1,112 @@
 .register {
-	background-color: $secondary-background-color;
-	height: max-content;
-	&-container {
-		width: 100%;
-		padding: 1rem;
-		@include univerzalni-display(flex, center, center);
-		flex-direction: column;
+  background-color: $secondary-background-color;
 
-		& h1 {
-			font-size: clamp(1.8rem, 7vw, 4.5rem);
-			margin: 2rem 0;
-		}
+  &-container {
+    width: 100%;
+    padding: 1rem;
+    @include univerzalni-display(flex, center, center);
+    flex-direction: column;
 
-		& .register-form {
-			height: 100vh;
-			width: clamp(25vh, 50%, 50vh);
-			@include univerzalni-display(flex, space-evenly, center);
-			flex-direction: column;
+    & h1 {
+      font-size: clamp(1.8rem, 7vw, 4.5rem);
+      margin: 2rem 0;
+    }
 
-			& .container {
-				width: 100%;
-				@include univerzalni-display(flex, space-evenly, center);
-				flex-direction: column;
+    & .register-form {
+      width: clamp(20vw, 40em, 90vw);
+      @include univerzalni-display(flex, space-evenly, center);
+      flex-direction: column;
 
-				& .input-container {
-					width: 100%;
-					@include univerzalni-display(flex, center, center);
+      & .container {
+        width: 100%;
+        @include univerzalni-display(flex, space-evenly, center);
+        flex-direction: column;
 
-					& input {
-						width: 100%;
-						margin-left: 0.5rem;
-						outline: none;
-						background: none;
-						border: none;
-						border-bottom: 1px solid $primary-text-color;
-						line-height: 30px;
+        & .input-container {
+          width: 100%;
+          @include univerzalni-display(flex, center, center);
 
-						&::placeholder {
-							color: $primary-text-color;
-							font-size: clamp(0.7rem, 2vw, 0.9rem);
-						}
-					}
-					& [placeholder]::-webkit-input-placeholder {
-						transition: color 0.5s ease;
-					}
-					& [placeholder]:focus::-webkit-input-placeholder {
-						color: transparent;
-						transition: color 0.5s ease;
-					}
-				}
-			}
+          & input {
+            width: 100%;
+            margin-left: 0.5rem;
+            outline: none;
+            background: none;
+            border: none;
+            border-bottom: 1px solid $primary-text-color;
+            line-height: 30px;
+            font-size: clamp(1rem, 1.3vw, 2.2rem);
 
-			& .name-surname-container {
-				width: 100%;
-				@include univerzalni-display(flex, center, center);
-				flex-direction: row;
+            &::placeholder {
+              color: $primary-text-color;
+              font-size: inherit;
+            }
+          }
+          & [placeholder]::-webkit-input-placeholder {
+            transition: color 0.5s ease;
+          }
+          & [placeholder]:focus::-webkit-input-placeholder {
+            color: transparent;
+            transition: color 0.5s ease;
+          }
+        }
+      }
 
-				& .name-container,
-				& .surname-container {
-					width: 50%;
-					@include univerzalni-display(flex, space-evenly, center);
-					flex-direction: column;
+      & .name-surname-container {
+        width: 100%;
+        @include univerzalni-display(flex, space-between, center);
+        flex-direction: row;
 
-					& input {
-						width: clamp(110px, 90%, 200px);
-						outline: none;
-						background: none;
-						border: none;
-						border-bottom: 1px solid $primary-text-color;
-						line-height: 30px;
+        & .name-container,
+        & .surname-container {
+          width: clamp(20vw, 40em, 95vw);
+          @include univerzalni-display(flex, space-between, center);
+          flex-direction: column;
 
-						&::placeholder {
-							color: $primary-text-color;
-							font-size: clamp(0.7rem, 2vw, 0.9rem);
-						}
-					}
-					& [placeholder]::-webkit-input-placeholder {
-						transition: color 0.5s ease;
-					}
-					& [placeholder]:focus::-webkit-input-placeholder {
-						color: transparent;
-						transition: color 0.5s ease;
-					}
-				}
-			}
-		}
+          & input {
+            width: clamp(110px, 90%, 200px);
+            outline: none;
+            background: none;
+            border: none;
+            border-bottom: 1px solid $primary-text-color;
+            line-height: 30px;
+            font-size: clamp(1rem, 1.3vw, 2.2rem);
+            &::placeholder {
+              color: $primary-text-color;
+              font-size: inherit;
+            }
+          }
+          & [placeholder]::-webkit-input-placeholder {
+            transition: color 0.5s ease;
+          }
+          & [placeholder]:focus::-webkit-input-placeholder {
+            color: transparent;
+            transition: color 0.5s ease;
+          }
+        }
 
-		& button {
-			@include button($button-color-2, clamp(5.5rem, 30%, 9rem), 2.5rem);
-			font-size: clamp(0.6rem, 2vw, 0.8rem);
-		}
+        & .name-container {
+          place-items: flex-start;
+        }
 
-		& p {
-			@include error-message();
-			margin: 1rem 0 1.5rem 0;
-		}
+        & .surname-container {
+          place-items: flex-end;
+        }
+      }
+    }
 
-		& h4 {
-			@include succes-message();
-			margin: 0 1rem 1.5rem 0;
-		}
-	}
+    & button {
+      @include button($button-color-2, clamp(5.5rem, 30%, 9rem), 2.5rem);
+      font-size: clamp(0.6rem, 2vw, 0.8rem);
+    }
+
+    & p {
+      @include error-message();
+      margin: 1rem 0 1.5rem 0;
+    }
+
+    & h4 {
+      @include succes-message();
+      margin: 0 1rem 1.5rem 0;
+    }
+  }
 }

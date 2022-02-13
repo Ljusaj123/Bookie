@@ -21,9 +21,9 @@
 
 .header {
   width: 100%;
-  min-height: calc(100vh + 5em);
+  min-height: 60em;
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("../../public/hero.jpg") no-repeat center center/cover;
+    url("/hero.jpg") no-repeat center center/cover;
   position: relative;
   z-index: 1;
 
@@ -38,7 +38,7 @@
     &::after {
       position: absolute;
       bottom: 10%;
-      left: 35%;
+      left: 37.5%;
       // background: white;
       background: transparent;
       border: 0.1em solid white;
@@ -73,7 +73,7 @@
       font-size: inherit;
       padding: 0.3em 1.5em;
       text-decoration: none;
-      background: #eadedb;
+      background: $button-color-3;
       border: none;
       color: rgba(0, 0, 0, 0.794);
       font-size: clamp(1em, 1.7vw, 3em);
@@ -87,13 +87,6 @@
     }
   }
 }
-
-// nav {
-//   width: 100%;
-//   @media (max-width: 768px) {
-//     position: fixed;
-//   }
-// }
 
 nav {
   min-height: 5em;
@@ -192,9 +185,9 @@ nav {
   z-index: 2;
   place-items: center;
   justify-content: space-evenly;
-  //   display: none;
-  transform: translateX(-100vw);
   transition: all 0.25s ease-in-out;
+  transform: scale(0, 1);
+  transform-origin: left;
   display: flex;
   a {
     text-decoration: none;
@@ -202,7 +195,7 @@ nav {
 }
 
 .open-mobile {
-  transform: translateX(0);
+  transform: scale(1, 1);
 }
 
 .open-burger {
@@ -221,12 +214,13 @@ nav {
 // ***FAN FAVOURITIES ****//
 
 .booklist-wrapper {
-  background: #968580;
+  background: $secondary-background-color;
   width: 100%;
   display: grid;
   place-items: start center;
   gap: 5em;
   grid-template-columns: repeat(1, 1fr);
+  min-height: 60em;
 
   color: white;
   padding: 5em 0;
@@ -244,8 +238,11 @@ nav {
   place-items: start center;
   grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+
   &__card {
-    // border: 0.12em solid red;
     box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.35);
     border-radius: 0.3em;
     width: 100%;
@@ -256,6 +253,11 @@ nav {
     place-items: center;
     gap: 1em;
     text-align: center;
+    h2,
+    h3 {
+      color: white;
+    }
+
     img {
       height: 15em;
       max-width: 100%;
@@ -266,13 +268,12 @@ nav {
       text-transform: lowercase;
       text-decoration: none;
       font-size: clamp(1em, 1.5vw, 2em);
-      // border: 0.12em solid red;
       cursor: pointer;
       padding: 0.5em 0.75em;
-      background: #3a2e39;
+      background: $button-color-2;
       color: white;
       border-radius: 0.25em;
-      box-shadow: 0.1em 0.1em 0.1em #3a2e39;
+      box-shadow: 0.1em 0.1em 0.1em $button-color-2;
       transition: all 0.25s ease-in-out;
 
       &:hover {
@@ -294,7 +295,7 @@ nav {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.9)
     ),
-    url(../../assets/show-catalog-image.jpg) center;
+    url("/show-catalog-image.jpg") center;
   background-size: cover;
 
   &-container {
@@ -389,7 +390,6 @@ nav {
 // ***FOOTER ***//
 
 .footer {
-  height: max-content;
   padding: 3rem 0.5rem;
   @include univerzalni-display(flex, center, center);
   background-color: $primary-background-color;
@@ -430,7 +430,7 @@ nav {
         @include univerzalni-display(flex, center, center);
         flex-direction: column;
         width: clamp(200px, 20vw, 400px);
-
+        font-family: inherit;
         & input,
         & textarea {
           width: 90%;
@@ -445,6 +445,10 @@ nav {
 
         & textarea {
           height: 10rem;
+
+          &::placeholder {
+            font-family: sans-serif;
+          }
         }
 
         & [placeholder]::-webkit-input-placeholder {

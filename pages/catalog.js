@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import BookCard from "../components/BookCard";
 import Footer from "../modules/footer/Footer";
+import Loading from "../components/Loading";
 
 const Catalog = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -48,8 +49,13 @@ const Catalog = () => {
 
   useEffect(() => {
     baseFetchCall();
+
     //eslint-disable-next-line
   }, [pageNum]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="catalog-main">
@@ -89,7 +95,7 @@ const Catalog = () => {
               return <BookCard item={item} key={key} />;
             })
           ) : (
-            <h2>loading...</h2>
+            <Loading />
           )}
         </div>
       </div>

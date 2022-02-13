@@ -84,7 +84,7 @@ const Footer = () => {
             ></textarea>
             <p>{formErrors.message}</p>
 
-            <button className="send-btn">Send</button>
+            <button className="send-btn">send</button>
             <h4>{formErrors.success}</h4>
           </form>
         </div>

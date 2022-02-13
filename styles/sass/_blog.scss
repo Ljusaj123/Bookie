@@ -48,8 +48,7 @@
       .search-icon {
         outline: none;
         border: none;
-        background: url("../../assets/search-icon.png") no-repeat center
-          center/cover;
+        background: url("/search-icon.png") no-repeat center center/cover;
         padding: 0.5em 0.75em;
         cursor: pointer;
         width: 3em;
@@ -178,7 +177,7 @@
     flex-direction: column;
     // gap: 2em;
     h1 {
-      font-size: clamp(1.5rem, 2vw, 3rem);
+      font-size: clamp(1.5rem, 1.5vw, 3rem);
     }
     h2 {
       font-style: italic;

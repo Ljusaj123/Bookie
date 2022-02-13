@@ -56,8 +56,16 @@ const Navbar = () => {
           <Link href="/blog">
             <a>blog</a>
           </Link>
-          <Link href="/contact">
-            <a>contact</a>
+          <Link href="#scroll">
+            <a
+              onClick={() => {
+                if (isMobileNavOpen) {
+                  setIsMobileNavOpen(false);
+                }
+              }}
+            >
+              contact
+            </a>
           </Link>
           <Link href="/login">
             <a>login</a>

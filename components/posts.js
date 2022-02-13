@@ -11,7 +11,13 @@ const posts = ({ post }) => {
         <h1>{post.frontmatter.title}</h1>
         <div className="text-container__contents">
           <p>{post.frontmatter.excerpt}</p>
-          <a href={post.frontmatter.source}>See original</a>
+          <a
+            href={post.frontmatter.source}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See original
+          </a>
           <p className="hashtag">#{post.frontmatter.category}</p>
         </div>
         {/* eslint-disable-next-line */}
