@@ -5,14 +5,11 @@ import BookCard from "./BookCard";
 const Booklist = () => {
   const [bookList, setBookList] = useState([]);
 
-  const getBooks = async () => {
-    const mojApiPoziv = await fetch("https://gutendex.com/books/");
-    if (!mojApiPoziv.ok) {
-      console.warn("bad req");
-    }
-    const mojRezultat = await mojApiPoziv.json();
-    setBookList(mojRezultat.results);
-    return mojRezultat;
+  const getBooks = () => {
+    fetch("https://gutendex.com/books/")
+      .then((result) => result.json())
+      .then((data) => setBookList(data.results))
+      .catch((error) => console.warn(error));
   };
 
   useEffect(() => {

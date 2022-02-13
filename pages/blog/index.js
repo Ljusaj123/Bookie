@@ -86,7 +86,7 @@ const Blog = ({ posts }) => {
             placeholder="search"
             onChange={(e) => {
               setSearchString(e.target.value);
-              // postToFind("searchbar");
+
               if (e.target.value === "") {
                 setBlogsToRender(posts);
               }
@@ -100,10 +100,6 @@ const Blog = ({ posts }) => {
           <Buttons />
         </div>
         <div className="posts-container">
-          {/* {posts.map((post, index) => (
-            <Posts key={index} post={post} />
-          ))} */}
-
           {blogsToRender !== undefined && blogsToRender.length > 0 ? (
             blogsToRender.map((blog, index) => {
               return <Posts post={blog} key={index} />;

@@ -26,7 +26,7 @@ export default function PostPage({
         </div>
         {/* eslint-disable-next-line */}
         <Link href="/blog">
-          <button className="btn btn2">Go back</button>
+          <button className="btn btn2">go back</button>
         </Link>
       </div>
     </div>
