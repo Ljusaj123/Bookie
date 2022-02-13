@@ -40,7 +40,7 @@ const Newsletter = () => {
             <input
               type="email"
               name="email"
-              placeholder="Your email..."
+              placeholder="your email..."
               value={formValues.email}
               onChange={handleChange}
               autoComplete="off"
