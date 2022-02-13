@@ -12,7 +12,6 @@ const Booklist = () => {
     }
     const mojRezultat = await mojApiPoziv.json();
     setBookList(mojRezultat.results);
-    console.log(mojRezultat.results);
     return mojRezultat;
   };
 

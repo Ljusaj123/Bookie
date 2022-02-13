@@ -16,7 +16,6 @@ const Catalog = () => {
     fetch(`https://gutendex.com/books/?page=1&search=${searchString}`)
       .then((result) => result.json())
       .then((data) => {
-        console.log(data);
         setSearchResults(data.results);
       });
   };
@@ -25,7 +24,6 @@ const Catalog = () => {
     fetch(paginationString)
       .then((result) => result.json())
       .then((data) => {
-        console.log(data);
         setSearchResults(data.results);
       });
   };
@@ -34,7 +32,6 @@ const Catalog = () => {
     switch (operator) {
       case "NEXT_PAGE":
         setPageNum(pageNum + 1);
-        console.log(pageNum);
         break;
       case "PREV_PAGE":
         if (pageNum === 1) {
@@ -42,7 +39,6 @@ const Catalog = () => {
         } else {
           setPageNum(pageNum - 1);
         }
-        console.log(pageNum);
         break;
     }
   };
