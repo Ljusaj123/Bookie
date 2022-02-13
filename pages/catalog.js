@@ -27,11 +27,14 @@ const Catalog = () => {
   };
 
   const baseFetchCall = () => {
-    // setIsLoading(true);
     fetch(paginationString)
       .then((result) => result.json())
       .then((data) => {
-        setSearchResults(data.results);
+        if (data.detail === "Invalid page.") {
+          setSearchResults([]);
+        } else {
+          setSearchResults(data.results);
+        }
       })
       .catch((error) => console.warn(error))
       .finally(() => {
@@ -97,14 +100,14 @@ const Catalog = () => {
       </div>
       <div className="booklist-wrapper">
         <div className="booklist">
-          {searchResults.length > 0 ? (
+          {isLoading ? (
+            <Loading />
+          ) : searchResults.length > 0 ? (
             searchResults.map((item, key) => {
               return <BookCard item={item} key={key} />;
             })
-          ) : isLoading ? (
-            <Loading />
           ) : (
-            <h2>No results, try another query</h2>
+            <h2>No results</h2>
           )}
         </div>
       </div>
