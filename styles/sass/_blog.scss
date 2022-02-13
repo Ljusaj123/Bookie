@@ -144,7 +144,7 @@
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
-  place-items: start center;
+  place-items: flex-start center;
   width: 100%;
   position: relative;
   gap: 3em;
@@ -250,7 +250,7 @@
     border-radius: 0.5em;
     display: flex;
     flex-direction: column;
-    place-items: start center;
+    place-items: flex-start center;
     gap: 2em;
 
     & img {
@@ -268,7 +268,7 @@
 
     &__items {
       display: flex;
-      place-items: start center;
+      place-items: flex-start center;
       flex-flow: row wrap;
       gap: 2em;
 

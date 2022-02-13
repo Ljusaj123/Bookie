@@ -450,10 +450,10 @@ nav {
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
 }
 
 .newsletter-container {
@@ -1291,7 +1291,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  place-items: start center;
+  place-items: flex-start center;
   width: 100%;
   position: relative;
   gap: 3em;
@@ -1457,7 +1457,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  place-items: start center;
+  place-items: flex-start center;
   gap: 2em;
 }
 
@@ -1482,7 +1482,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-items: start center;
+  place-items: flex-start center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -1982,3 +1982,4 @@ nav {
     padding: 0;
   }
 }
+/*# sourceMappingURL=styles.css.map */

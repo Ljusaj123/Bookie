@@ -4,6 +4,7 @@ import Image from "next/image";
 const posts = ({ post }) => {
   return (
     <div className="post-container">
+      {/* eslint-disable-next-line */}
       <img src={post.frontmatter.cover_image} alt="" />
       <div className="text-container">
         <h2>{post.frontmatter.date}</h2>
@@ -13,7 +14,7 @@ const posts = ({ post }) => {
           <a href={post.frontmatter.source}>See original</a>
           <p className="hashtag">#{post.frontmatter.category}</p>
         </div>
-
+        {/* eslint-disable-next-line */}
         <Link href={`/blog/${post.slug}`}>
           <button className="read-more-btn">read more</button>
         </Link>

@@ -13,6 +13,7 @@ export default function PostPage({
     <div className="posters">
       <div className="card">
         <div className="card__items">
+          {/* eslint-disable-next-line */}
           <img src={cover_image} alt="" />
           <div className="card__info">
             <p className="post-date">Posted on {date}</p>
@@ -23,7 +24,7 @@ export default function PostPage({
         <div className="post-body">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
-
+        {/* eslint-disable-next-line */}
         <Link href="/blog">
           <button className="btn btn2">Go back</button>
         </Link>

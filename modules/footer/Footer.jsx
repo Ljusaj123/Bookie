@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
 
 import {
   FaFacebook,
@@ -9,46 +9,42 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-  const initalvalues = { username: "", email: "", message:"", success: "" };
-    const [formValues, setFormValues] = useState(initalvalues);
-    const [formErrors, setFromErrors] = useState({});
-    const [isSubmit, setIsSubmit] = useState(false);
+  const initalvalues = { username: "", email: "", message: "", success: "" };
+  const [formValues, setFormValues] = useState(initalvalues);
+  const [formErrors, setFromErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormValues({ ...formValues, [name]: value });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFromErrors(validate(formValues));
+    setIsSubmit(true);
+    setFormValues(initalvalues);
+  };
+
+  const validate = (values) => {
+    const error = {};
+
+    if (!values.username) {
+      error.username = "Username is required!";
+    }
+    if (!values.email) {
+      error.email = "Email is required!";
+    }
+    if (!values.message) {
+      error.message = "Message is required!";
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setFromErrors(validate(formValues));
-        setIsSubmit(true);
-        setFormValues(initalvalues);
-
+    if (Object.keys(error).length === 0) {
+      error.success = "You have been loged!";
     }
 
-    const validate = (values) => {
-        const error = {};
-
-        if (!values.username) {
-            error.username = "Username is required!"
-        }
-        if (!values.email) {
-            error.email = "Email is required!"
-        }
-        if (!values.message) {
-            error.message = "Message is required!"
-        }
-
-        if (Object.keys(error).length === 0) {
-            error.success = "You have been loged!"
-
-        }
-
-        return error;
-
-    }
+    return error;
+  };
   return (
     <footer className="footer" id="scroll">
       <div className="footer-container">
@@ -59,37 +55,37 @@ const Footer = () => {
         <div className="contact-footer">
           <h1>Contact Us</h1>
           <form className="contact-us-form" onSubmit={handleSubmit}>
-            <input 
-              type="text" 
+            <input
+              type="text"
               name="username"
               placeholder="your name..."
               value={formValues.username}
               onChange={handleChange}
-              autocomplete="off" 
+              autoComplete="off"
             />
             <p>{formErrors.username}</p>
 
-            <input 
-              type="email" 
+            <input
+              type="email"
               name="email"
               placeholder="youremail@mail.com"
               value={formValues.email}
               onChange={handleChange}
-              autocomplete="off"
+              autoComplete="off"
             />
             <p>{formErrors.email}</p>
 
-            <textarea 
+            <textarea
               placeholder="your message here..."
               name="message"
               value={formValues.message}
               onChange={handleChange}
-              autocomplete="off">
-              </textarea>
+              autoComplete="off"
+            ></textarea>
             <p>{formErrors.message}</p>
-            
+
             <button className="send-btn">Send</button>
-             <h4>{formErrors.success}</h4>
+            <h4>{formErrors.success}</h4>
           </form>
         </div>
         <div className="made-by-footer">
