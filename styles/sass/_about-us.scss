@@ -1,57 +1,61 @@
 .about {
-	background: linear-gradient(
-		to bottom,
-		$secondary-background-color,
-		$secondary-background-color,
-		$primary-text-color
-	);
-	height: max-content;
+  background: linear-gradient(
+    to bottom,
+    $secondary-background-color,
+    $secondary-background-color,
+    $primary-text-color
+  );
+  height: max-content;
 
-	& .introduction {
-		height: max-content;
-		width: 70%;
-		margin: 5rem auto;
-		padding: 2rem;
-		@include univerzalni-display(flex, center, center);
-		flex-direction: column;
-		& h1 {
-			font-size: clamp(2rem, 7vw, 5.5rem);
-			margin-bottom: 3rem;
-			text-align: center;
-		}
-		& p {
-			font-size: clamp(0.9rem, 3vw, 1.5rem);
-			text-align: center;
-		}
-	}
+  & .introduction {
+    height: max-content;
+    width: 70%;
+    margin: 5rem auto;
+    padding: 2rem;
+    @include univerzalni-display(flex, center, center);
+    flex-direction: column;
+    & h1 {
+      font-size: clamp(2rem, 7vw, 5.5rem);
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    & p {
+      font-size: clamp(0.9rem, 3vw, 1.5rem);
+      text-align: center;
+    }
+  }
 
-	.vision {
-		height: max-content;
-		width: 100%;
-		margin: 5rem 0;
-		padding: 2rem;
-		@include univerzalni-display(flex, space-evenly, center);
-		& .picture-container {
-			padding: 0 2rem;
-			@include univerzalni-display(flex, center, center);
-		}
-		& .text-container {
-			width: 40%;
-			padding: 1rem;
-			@include univerzalni-display(flex, space-evenly, center);
-			flex-direction: column;
+  .vision {
+    height: max-content;
+    width: 100%;
+    margin: 5rem 0;
+    padding: 2rem;
+    @include univerzalni-display(flex, space-evenly, center);
+    & .picture-container {
+      padding: 0 2rem;
+      @include univerzalni-display(flex, center, center);
+      img {
+        filter: drop-shadow(0.2em 0.2em 0.25em rgba(0, 0, 0, 0.25));
+        border-radius: 0.7em;
+      }
+    }
+    & .text-container {
+      width: 40%;
+      padding: 1rem;
+      @include univerzalni-display(flex, space-evenly, center);
+      flex-direction: column;
 
-			& h1 {
-				font-size: clamp(1.5rem, 6vw, 4.5rem);
-				margin-bottom: 2rem;
-				text-align: center;
-			}
+      & h1 {
+        font-size: clamp(1.5rem, 6vw, 4.5rem);
+        margin-bottom: 2rem;
+        text-align: center;
+      }
 
-			& p {
-				font-size: clamp(0.85rem, 2vw, 1.3rem);
-				text-align: center;
-				margin-bottom: 4rem;
-			}
-		}
-	}
+      & p {
+        font-size: clamp(0.85rem, 2vw, 1.3rem);
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+    }
+  }
 }

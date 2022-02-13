@@ -72,16 +72,16 @@ const Login = () => {
           </div>
           <p>{formErrors.password}</p>
 
-          <button className="btn">Login</button>
+          <button className="btn">login</button>
 
           <h4>{formErrors.success}</h4>
         </form>
         <div className="no-account">
           <p>
             {/* eslint-disable-next-line */}
-            don't have an account yet?
+            Don't have an account yet?
             <Link href={"../register"}>
-              <a href="#">Register now</a>
+              <a href="#"> Register now</a>
             </Link>
           </p>
         </div>

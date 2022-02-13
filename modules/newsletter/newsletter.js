@@ -45,7 +45,7 @@ const Newsletter = () => {
               onChange={handleChange}
               autoComplete="off"
             />
-            <button id="sign-in-btn">Sign Up</button>
+            <button id="sign-in-btn">sign up</button>
           </div>
           <div className="error-messages">
             <p>{formErrors.email}</p>

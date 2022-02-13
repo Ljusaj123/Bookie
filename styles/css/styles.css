@@ -286,7 +286,7 @@ nav {
 }
 
 .booklist-wrapper {
-  background: #7e6e6a;
+  background: #7a6b68;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -455,7 +455,7 @@ nav {
 .newsletter {
   height: 50vh;
   padding: 2rem 0.5rem;
-  background-color: #7e6e6a;
+  background-color: #7a6b68;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,7 +873,7 @@ nav {
 }
 
 .catalog-main {
-  background: #7e6e6a;
+  background: #7a6b68;
   min-height: 70em;
 }
 
@@ -972,8 +972,8 @@ nav {
 }
 
 .about {
-  background: -webkit-gradient(linear, left top, left bottom, from(#7e6e6a), color-stop(#7e6e6a), to(#fffffff8));
-  background: linear-gradient(to bottom, #7e6e6a, #7e6e6a, #fffffff8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7a6b68), color-stop(#7a6b68), to(#fffffff8));
+  background: linear-gradient(to bottom, #7a6b68, #7a6b68, #fffffff8);
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -1043,6 +1043,12 @@ nav {
           align-items: center;
 }
 
+.about .vision .picture-container img {
+  -webkit-filter: drop-shadow(0.2em 0.2em 0.25em rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0.2em 0.2em 0.25em rgba(0, 0, 0, 0.25));
+  border-radius: 0.7em;
+}
+
 .about .vision .text-container {
   width: 40%;
   padding: 1rem;
@@ -1078,7 +1084,7 @@ nav {
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  background-color: #7e6e6a;
+  background-color: #7a6b68;
 }
 
 .blog-container {
@@ -1409,7 +1415,7 @@ nav {
 }
 
 .posters {
-  background: #7e6e6a;
+  background: #7a6b68;
   padding: 5em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1474,7 +1480,7 @@ nav {
   width: clamp(80vw, 50em, 90vw);
   margin: 0 auto;
   padding: 0.5rem;
-  background-color: #7e6e6a;
+  background-color: #7a6b68;
   border-radius: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1529,7 +1535,7 @@ nav {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background: #7e6e6a;
+  background: #7a6b68;
 }
 
 .login-container {
@@ -1700,7 +1706,7 @@ nav {
 }
 
 .register {
-  background-color: #7e6e6a;
+  background-color: #7a6b68;
 }
 
 .register-container {

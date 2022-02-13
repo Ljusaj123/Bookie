@@ -11,18 +11,10 @@ const About = () => {
       <main className="introduction">
         <h1>About Us</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          consequatur libero corporis iusto nam earum nemo alias vel cumque,
-          distinctio magni minus, quas dolor non porro ipsam saepe. Voluptates,
-          iusto? Laudantium placeat id accusantium recusandae cupiditate vitae
-          est inventore? Rerum dolores hic minus rem labore beatae maiores sequi
-          facilis excepturi voluptatibus itaque obcaecati, ut pariatur,
-          accusantium sunt nihil optio quo ipsa exercitationem impedit
-          aspernatur! Natus rem cupiditate voluptates quibusdam suscipit, et
-          animi cum, dolores ullam at porro ipsa consectetur similique
-          repellendus esse officia beatae eligendi laborum iure sint dolorum
-          velit ducimus deleniti! Iusto quis culpa voluptate tempore autem
-          reprehenderit aliquam?
+          Bookie is an university project made by two students at Faculty of
+          Electrical Engineering, Mechanical Engineering and Naval Architecture
+          at Split, Croatia. We are using Gutendex - Web API for Project
+          Gutenberg ebook metadata.
         </p>
       </main>
       <section className="vision">
@@ -37,12 +29,10 @@ const About = () => {
         <div className="text-container">
           <h1>Our Vision</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-            molestias aliquam, maiores distinctio quia voluptatem inventore
-            soluta facilis nisi qui? Odit, culpa blanditiis. Assumenda, ea sunt
-            quis natus sequi nesciunt.Soluta consequatur libero corporis iusto
-            nam earum nemo alias vel cumque, distinctio magni minus, quas dolor
-            non porro ipsam saepe. Voluptates, iusto?
+            Ben Okri said: Reading is an act of civilization; it is one of the
+            greatest acts of civilization because it takes the free raw material
+            of the mind and builds castles of possibilities. We couldnt agree
+            more, that is why we made this app.
           </p>
         </div>
       </section>
