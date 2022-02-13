@@ -81,7 +81,6 @@ const Catalog = () => {
             placeholder="search"
             onChange={(e) => {
               setSearchString(e.target.value);
-              console.log(searchString);
             }}
             value={searchString}
           />
