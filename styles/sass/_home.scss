@@ -25,6 +25,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url("/hero.jpg") no-repeat center center/cover;
   z-index: 1;
+  position: relative;
   @media (max-width: 768px) {
     min-height: 100vh;
   }
@@ -104,6 +105,8 @@ nav {
   display: flex;
   place-items: center;
   justify-content: center;
+  z-index: 99;
+  position: relative;
 }
 
 .navbar-wrapper {

@@ -51,6 +51,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("/hero.jpg") no-repeat center center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("/hero.jpg") no-repeat center center/cover;
   z-index: 1;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -155,6 +156,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 99;
+  position: relative;
 }
 
 .navbar-wrapper {
