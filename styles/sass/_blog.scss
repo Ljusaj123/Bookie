@@ -1,7 +1,6 @@
 .blog {
   height: max-content;
   width: 100%;
-  // padding: 2rem;
   background-color: $secondary-background-color;
 
   &-container {
@@ -38,6 +37,7 @@
 
         &::placeholder {
           opacity: 1;
+          color: white;
         }
 
         &:focus {
@@ -221,7 +221,6 @@
   padding: 5em 1em;
   display: flex;
   flex-direction: column;
-  // border: 5px solid red;
   button {
     place-self: flex-end;
   }

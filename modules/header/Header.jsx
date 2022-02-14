@@ -8,14 +8,16 @@ const Header = () => {
   return (
     <header className="header">
       <Navbar />
-      <div className="header__slogan">
-        <h1 className="header__slogan__text">Read more, read often</h1>
-        <Link href="/catalog">
-          <a className="header__slogan__button">browse catalog</a>
-        </Link>
-      </div>
+      <div className="header-slogan-wrapper">
+        <div className="header__slogan">
+          <h1 className="header__slogan__text">Read more, read often</h1>
+          <Link href="/catalog">
+            <a className="header__slogan__button">browse catalog</a>
+          </Link>
+        </div>
 
-      <div className="header__scroll-down"></div>
+        <div className="header__scroll-down"></div>
+      </div>
     </header>
   );
 };

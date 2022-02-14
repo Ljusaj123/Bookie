@@ -26,6 +26,7 @@
 
     &::placeholder {
       opacity: 1;
+      color: white;
     }
 
     &:focus {
@@ -45,7 +46,6 @@
 }
 
 .search-controls {
-  // border: 1px solid blue;
   width: clamp(80vw, 40em, 95vw);
   margin: 0 auto;
   display: flex;

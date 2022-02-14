@@ -18,7 +18,7 @@ const Booklist = () => {
 
   return (
     <div className="booklist-wrapper">
-      <h2 className="booklist-heading">Fan favorites</h2>
+      <h2 className="booklist-heading">Fan favourites</h2>
       <div className="booklist">
         {bookList ? (
           bookList.slice(0, 6).map((item, key) => {
